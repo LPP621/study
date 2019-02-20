@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_function 函数扩展</title>
+</head>
+<body>
+<!--
+1. Function.prototype.bind(obj):
+   * 作用：将函数内的 this绑定为 obj,并将函数返回
+2. 面试题：区别 bind() 与 call() 和 apply()?
+   *  都能指定函数中的 this
+   *  call() / apply()是立即调用函数
+   *  bind() 是将函数返回
+3. call() 和 apply() 传参形式区别
+   * call() 方法可以将实参在对象之后依次传递
+   * apply() 方法需要将实参封装到数组里统一传递
+-->
+<script type="text/javascript">
+    var obj = {username: 'kobe'};
+    function foo(data) {
+        console.log(this,data);
+    }
+    foo();   // window
+    // 传入参数的形式
+    foo.call(obj,33);     // 直接从第二个参数开始，依次传入
+    foo.apply(obj,[32]);  // 第二个参数必须是数组，传入放在数组里
+
+    // bind 的特点：绑定完 this 不会立即调用当前的函数，而是将函数返回
+    // bind 传参方式同 call 一样
+    // foo.bind(obj);
+
+    // var bar = foo.bind(obj);
+    // console.log(bar);
+    // bar();
+    // 上面3行调用函数可以用下面的代替
+
+    foo.bind(obj,33)();
+
+    setTimeout(function () {
+        console.log(this);
+    },1000);
+    setTimeout(function () {
+        console.log(this);
+    }.bind(obj),3000);
+</script>
+</body>
+</html>

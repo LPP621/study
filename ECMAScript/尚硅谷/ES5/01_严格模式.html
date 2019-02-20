@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_严格模式</title>
+</head>
+<body>
+<!--
+    1、理解：
+      * 除了正常运行模式（混杂模式），ES5添加了第二种运行模式："严格模式"（strict mode）.
+      * 顾名思义，这种模式使得 javascript 在更严格的语法条件下运行
+    2、目的/作用
+      * 消除 javascript 语法的一些不合理，不严谨之处，减少一些怪异行为
+      * 消除代码运行的一些不安全之处，为代码的安全运行保驾护航
+      * 为未来新版本的 javascript 做好铺垫
+    3、使用
+      * 在全局或函数的第一条语句定义为：'use strict'
+      * 如果浏览器不支持，只解析为一条简单的语句，没有任何副作用
+    4、语法和行为改变
+      * 必须用 var 声明变量
+      * 禁止自定义的函数中的 this 指向 window
+      * 创建 eval 作用域
+      * 对象不能有重名的属性
+-->
+<script type="text/javascript">
+    'use strict';
+
+    // ex1:
+    var username = 'kobe';        // 严格模式下，必须用 var 声明变量，否则会报错
+    console.log(username);
+
+    // ex2:
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    new Person('kobe',16);      // 严格模式下，必须在函数前面加 new ，否则会报错
+
+    // ex3:
+    var str = 'NBA';
+    eval('var str = "CBA";alert(str)');          // eval 可以解析（）里面的字符串，并且执行（）里面的代码
+    alert(str);          // 严格模式下此处 alert NBA，严格模式下，eval 有自己的作用域，里面的变量只在自己的作用域起作用
+</script>
+</body>
+</html>

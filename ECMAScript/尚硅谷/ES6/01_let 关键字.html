@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_let 关键字</title>
+</head>
+<body>
+<button>测试一</button>
+<button>测试二</button>
+<button>测试三</button>
+<!--
+let
+1. 作用：
+  * 与 var 类似，用于声明一个变量
+2. 特点：
+  * 在块作用域内有效
+  * 不能重复声明
+  * 不会预处理，不存在提升
+     - 用 var 定义一个变量的时候，在定义变量之前 console 出的是 undefined，不会报错，此时叫做 var 会预处理
+     - 但是用let 的时候不会预处理，会报错
+3. 应用：
+  * 循环遍历加监听
+  * 使用 let 取代 var 是趋势
+-->
+<script type="text/javascript">
+    // console.log(username);   // 用 let 会报错，用var 是undefined（var 会预处理）
+    let username = 'kobe';
+    // let username = 'kob';   // 如果加上这个定义的话会提示 Identifier 'username' has already been declared
+    console.log(username);
+
+    let btns = document.getElementsByTagName('button');
+
+    // 方式一：使用闭包形式立即执行函数，
+    // 使用闭包形式弹出索引 i（立即执行函数） ,function 后的 i 是实参，后面括号里面的是形参
+    /*
+    for (var i=0;i<btns.length;i++){
+        var btn = btns[i];
+        (function (i) {
+            btn.onclick = function () {
+                alert(i);
+            }
+        })(i)
+    }
+    */
+
+    // 方式二：let
+    for (let i=0;i<btns.length;i++){
+        var btn = btns[i];
+        btn.onclick = function () {
+            alert(i);       // 0，1，2
+        }
+    }
+</script>
+</body>
+</html>

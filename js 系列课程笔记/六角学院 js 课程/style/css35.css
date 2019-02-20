@@ -1,0 +1,14 @@
+.hero {
+    height: 400px;
+    background-image: url(../images/image35-1.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+}
+.section2 {
+    background: lightgreen;
+    text-align: center;
+    color: #ffffff;
+    font-style: 80px;
+    padding: 100px;
+}

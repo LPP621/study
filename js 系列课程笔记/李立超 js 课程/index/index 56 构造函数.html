@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数</title>
+    <script type="text/javascript">
+        /*
+        *  使用工厂方式创造对象
+        *    通过该方法可以大批量的创建对象
+        *
+        * 但是： 使用工厂方式创造的对象，使用的构造函数都是Object
+        *      所以创建的对象都是 Object 这个类型
+        *       就导致我们无法区分出多种不同类型的对象
+        */
+        function createPerson(name, age, gender) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.gender =  gender;
+            obj.sayName = function () {
+                alert(this.name);
+            };
+            return obj;
+        }
+
+        function createDog(name, age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayHello = function () {
+                alert("汪汪～～");
+            };
+            return obj;
+        }
+
+        var obj5 = createPerson("唐僧5",500, "男");
+        var obj6 = createPerson("唐僧6",600, "男");
+        var obj7 = createPerson("唐僧7",700, "男");
+        obj6.sayName();
+
+        var dog = createDog("旺财",3);
+        dog.sayHello();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用工厂方法创建对象</title>
+    <script type="text/javascript">
+        /*
+        * 创建一个对象（全局）
+        */
+        var obj = {
+            name: "孙",
+            age: 18,
+            gender: "男",
+            sayName: function () {
+                alert(this.name);
+            }
+        };
+        var obj2 = {
+            name: "猪",
+            age: 28,
+            gender: "男",
+            sayName: function () {
+                alert(this.name);
+            }
+        };
+        var obj3 = {
+            name: "唐",
+            age: 38,
+            gender: "男",
+            sayName: function () {
+                alert(this.name);
+            }
+        };
+        var obj4 = {
+            name: "沙",
+            age: 48,
+            gender: "男",
+            sayName: function () {
+                alert(this.name);
+            }
+        };
+        obj.sayName();
+
+        /*
+        *  使用工厂方式创造对象
+        *    通过该方法可以大批量的创建对象
+        *
+        * 但是： 使用工厂方式创造的对象，使用的构造函数都是Object
+        *      所以创建的对象都是 Object 这个类型
+        *       就导致我们无法区分出多种不同类型的对象
+        */
+        function createPerson(name, age, gender) {
+            // 创建一个新的对象 (局部)
+            var obj = new Object();
+
+            // 向对象中添加属性
+                obj.name = name;
+                obj.age = age;
+                obj.gender =  gender;
+                obj.sayName = function () {
+                alert(this.name);
+            };
+
+            // 将新的对象返回
+            return obj;
+        }
+
+        var obj5 = createPerson("唐僧5",500, "男");
+        var obj6 = createPerson("唐僧6",600, "男");
+        var obj7 = createPerson("唐僧7",700, "男");
+        console.log(obj5);
+        console.log(obj6);
+        console.log(obj7);
+        obj6.sayName();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

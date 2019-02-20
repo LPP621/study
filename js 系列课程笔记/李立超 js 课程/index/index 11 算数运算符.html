@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script type="text/javascript">
+    /*
+    * 运算符也叫操作符
+    *   通过运算符可以对一个或多个值进行运算，并获取运算结果
+    *   比如： typeof 就是运算符，可以获得一个值的类型
+    *       它会将该值的类型以字符串的形式返回
+    *       number  string   boolean  undefined   object
+    *
+    *   算术运算符
+    *       当对非 Number 类型的值进行运算时，会将这些值转换为 Number 然后再运算
+    *     +
+    *        如果对两个字符串进行加法运算，则会做成拼串
+    *               会将两个字符串拼接成一个字符串并返回
+    *        任何的值和字符串做加法运算，都会先转换为字符串，然后再拼成一个字符串
+    *     - 和 * 和 /
+    *       任意数据类型的和 number -和* ，都先转换为number 类型再运算
+    *       undefined 转换为 NaN ,任何值和 NaN 相减/乘/除都是 NaN
+    *           可以通过为一个值 -0 *1 /1代替 Number()
+    *     %
+    *     取余
+    *
+    *
+    * */
+
+    // 第一种
+    var a = 123;
+    var result = typeof a;
+    console.log(result);            // number
+    console.log(typeof result);      //string
+
+    // 第二种：
+    var result = 123 + 456;
+    console.log(result);            // 579
+
+    // 第三种
+    var result = true + false;
+    console.log(result);            //  1
+
+    // 第四种
+    var result = true +1;
+    console.log(result);            //  2
+
+    // 第五种
+    var result = null + 1;
+    console.log(result);           // 1
+
+    // 第六种
+    var result = undefined + 1;
+    console.log(result);         // NaN
+
+    // 第七种
+    var result = 1 + NaN;
+    console.log(result);        // NaN
+
+    // 两个字符串相加
+    var result = "123" + "456";
+    console.log(result);       // 123456
+
+    // 第九种
+    var result = 123 +"1";
+    console.log("result = "+result);       // result = 1231
+
+    var result1 = 1 + 2 +"3";
+    console.log("result1 = "+result1);     // result1 = 33
+
+    var result2 = "1" + 2 + 3;
+    console.log("result2 = "+result2);      // result2 = 123
+
+    var result3 = 1 + "2" + 3;
+    console.log("result3 = "+result3);      // result3 = 123
+
+    var result4 = "1" + "2" + 3;
+    console.log("result4 = "+result4);      // result4 = 123
+
+    var result = true + "hello";
+    console.log(result);        // truehello
+
+    /* 任何值和字符串相加都会变成字符串，所以可以利用这一特性，将任意的数据类型转换为 String
+            做法：让任意的数据类型 + 一个空字符串 ""
+     */
+    var b = 123;
+    b = b +"";             // 本质上相当于 b = String(b)
+    console.log(typeof b);     // string
+    console.log(b);             // 123
+    console.log("b = "+b);      // b = 123
+</script>
+<body>
+
+</body>
+</html>

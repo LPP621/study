@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器的应用</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+        }
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 0;
+            margin-top: 200px;
+        }
+    </style>
+    <script type="text/javascript" src="../js/js122.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var box1 = document.getElementById("box1");
+            var box2 = document.getElementById("box2");
+            var btn01 = document.getElementById("btn01");
+            var btn02 = document.getElementById("btn02");
+            var btn03 = document.getElementById("btn03");
+            var btn04 = document.getElementById("btn04");
+            // 点击按钮以后，使 box 向右移动（left 的值增大）
+            btn01.onclick = function () {
+                move(box1, "left", 800,10);
+            };
+            btn02.onclick = function () {
+                move(box1, "left", 0,10);
+            };
+            btn03.onclick = function () {
+                move(box2, "left", 800,20);
+            };
+            btn04.onclick = function () {
+                // move(box2,"width", 900,20);
+                move(box2,"left", 800,20,function () {
+                    move(box2,"top", 300,20);
+                })
+            };
+        };
+    </script>
+</head>
+<body>
+<button id="btn01">box1 向右移动</button>
+<button id="btn02">box1 向左移动</button>
+<button id="btn03">box2 向右移动</button>
+<button id="btn04">测试按钮</button>
+<div id="box1"></div>
+<div id="box2"></div>
+<div style="width: 0;height: 1000px;border-left: 1px solid black;position: absolute;left: 900px;margin-top: -50px;"></div>
+</body>
+</html>

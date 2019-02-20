@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+    <script type="text/javascript">
+        /*
+        * 数据类型指的是字面量的类型
+        * 在 JS 中一共有六种数据类型
+        *     - String     字符串
+        *     - Number     数值
+        *     - Boolean    布尔值
+        *     - Null       空值
+        *     - Undefined  未定义
+        *     - Object     对象
+        *
+        *   其中 String、Number、Boolean、Null、Undefined 属于基本数据类型； Object 属于引用数据类型
+        *
+        *   基本数据类型都是单一的值"hello" 123 true
+        *       值和值之间没有任何的联系
+        *
+        *   在 js 中用来表示一个人的信息（name  gender  age）:
+        *   var name = "";
+        *   var gender = "";
+        *   var age = "";
+        *   如果使用基本类型的数据，我们所创建的变量都是独立的，不能成为一个整体。
+        *
+        *   对象属于一种复合的数据类型，在对象中可以保存多个不同数据类型的属性
+        *    1、内建对象
+        *       - 由 ES 标准中定义的对象，在任何的 ES 的实现中都可以使用
+        *       - 比如：Math String Number Boolean Function Object 。。。
+        *
+        *    2、宿主对象
+        *       - 由 JS 的运行环境提供的对象，目前来看主要指由浏览器提供的对象
+        *       - 比如：BOM  DOM
+        *
+        *    3、自定义对象
+        *       - 由开发人员自己创建的对象
+        */
+        // console.log();    // console.log 就是一个对象，由浏览器提供的
+
+        // 创建对象
+        /*
+        *  使用 new 关键字调用的函数，是构造函数 constructor
+        *   构造函数是专门用来创建对象的函数
+        * */
+        var obj = new Object();      // Object() 代表的是一个函数
+        //console.log(obj);            // Object
+        // console.log(typeof obj);     // Object
+
+        /*
+        * 在对象中保存的值称为属性
+        * 向对象添加属性
+        *   语法：对象.属性名 = 属性值；
+        * */
+        // 向 obj 中添加一个 name 属性
+        obj.name = "孙悟空";
+        // 向 obj 中添加一个 gender 属性
+        obj.gender = "男";
+
+        /*
+        *  读取对象中的属性
+        *       语法：对象.属性名
+        *  如果读取对象中没有的属性，不会报错而是会返回 undefined
+        *
+        */
+
+        console.log(obj);
+        console.log(obj.name);       // 孙悟空
+
+        /*
+        * 修改对象的属性值
+        *   语法： 对象.属性名 = 新值
+        */
+        obj.name = "sunsun";
+        console.log(obj.name);        // sunsun
+
+        /*
+        * 删除对象的属性
+        *    语法： delete 对象.属性名
+        */
+        delete obj.name;
+        console.log(obj.name);       //undefined
+    </script>
+</head>
+<body>
+
+</body>
+</html>

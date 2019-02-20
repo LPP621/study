@@ -1,0 +1,36 @@
+body {
+    background: -webkit-linear-gradient(left,pink,skyblue);
+    background: -o-linear-gradient(right,pink,skyblue);
+    background: -moz-linear-gradient(right,pink,skyblue);
+    background: linear-gradient(to right,pink,skyblue);
+}
+.ka {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 500px;
+}
+.img {
+    /*水平翻转*/
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform: scaleX(-1);
+    position: relative;
+    float: left;
+}
+.content {
+    margin-left: 350px;
+}
+#txt {
+    width: 210px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#add {
+    width: 85px;
+    height: 42px;
+    margin-left: 30px;
+    background-color: aliceblue;
+    font-size: 15px;
+}

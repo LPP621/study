@@ -1,0 +1,74 @@
+
+/*
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+animation-name	                指定要绑定到选择器的关键帧的名称
+animation-duration	            动画指定需要多少秒或毫秒完成
+animation-timing-function	    设置动画将如何完成一个周期
+animation-delay	                设置动画在启动前的延迟间隔。
+animation-iteration-count	    定义动画的播放次数。
+animation-direction	            指定是否应该轮流反向播放动画。
+animation-fill-mode	            规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。
+animation-play-state	        指定动画是否正在运行或已暂停。
+initial	                        设置属性为其默认值。 阅读关于 initial的介绍。
+inherit	                        从父元素继承属性。 阅读关于 initinherital的介绍。
+*/
+
+.box {
+    background: green;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+}
+.box1 {
+    top: 0px;
+    left: 50px;
+    -webkit-animation: fontbulger 2s infinite;
+    -o-animation: fontbulger 2s infinite;
+    animation: fontbulger 2s infinite;
+}
+.box2 {
+    top: 0px;
+    left: 90px;
+    -webkit-animation: fontbulger 3s infinite;
+    -o-animation: fontbulger 3s infinite;
+    animation: fontbulger 3s infinite;
+}
+.box3 {
+    top: 0px;
+    left: 150px;
+    -webkit-animation: fontbulger 2.5s infinite;
+    -o-animation: fontbulger 2.5s infinite;
+    animation: fontbulger 2.5s infinite;
+}
+.box4 {
+    top: 0px;
+    left: 180px;
+    -webkit-animation: fontbulger 1.2s infinite;
+    -o-animation: fontbulger 1.2s infinite;
+    animation: fontbulger 1.2s infinite;
+}
+.box5 {
+    top: 0px;
+    left: 230px;
+    -webkit-animation: fontbulger 4s infinite;
+    -o-animation: fontbulger 4s infinite;
+    animation: fontbulger 4s infinite;
+}
+.box6 {
+    top: 0px;
+    left: 250px;
+    -webkit-animation: fontbulger 0.1s infinite;
+    -o-animation: fontbulger 0.1s infinite;
+    animation: fontbulger 0.1s infinite;
+}
+@keyframes fontbulger {
+    0% {
+        top: 0px;
+    }
+    30% {
+        top: 150px;
+    }
+    100% {
+        top: 0px;
+    }
+}

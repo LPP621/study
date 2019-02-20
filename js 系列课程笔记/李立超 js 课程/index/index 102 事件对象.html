@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件对象</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin-left: 25%;
+        }
+        #areaDiv {
+            width: 400px;
+            height: 100px;
+            margin-top: 30px;
+            border: 1px solid;
+        }
+        #showMsg {
+            width: 350px;
+            height: 50px;
+            margin-top: 30px;
+            border: 1px solid;
+            padding: 25px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            /*
+            * 当鼠标在 areaDiv 中移动时，在 showMsg 中来显示鼠标的坐标
+            */
+            var areaDiv = document.getElementById("areaDiv");
+            var showMsg = document.getElementById("showMsg");
+            
+            /*
+            *  onmoeseMove
+            *    - 该事件将会在鼠标进行移动时被触发
+            *
+            *  事件对象
+            *     - 当事件的响应函数被触发时，浏览器每次都会将一个事件对象作为实参传递进响应函数
+            *        在事件对象中封装了当前事件相关的一切信息，比如：鼠标的坐标、键盘的哪个键被按下，鼠标滚轮滚动的方向
+            */
+            areaDiv.onmousemove = function (event) {
+               // console.log(event);
+
+                /*
+                *  在 IE8中，响应函数被触发时，浏览器不会传递事件对象
+                *   在 IE8 及以下的浏览器中，是将事件对象作为 window 对象的属性保存的
+                */
+                /*if (!event){
+                    event = window.event;
+                }*/
+                event = event || window.event;
+
+                /*
+                *  clientX
+                *       获取鼠标指针的水平坐标
+                *  clientY
+                *       获取鼠标指针的垂直坐标
+                */
+
+                var x = window.event.clientX;
+                var y = window.event.clientY;
+
+                //alert("X = "+x+",y = " +y);
+
+                // 在 showMsg 中显示移动鼠标的坐标
+                showMsg.innerHTML ="X = "+x+",y = " +y;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="areaDiv"></div>
+<div id="showMsg"></div>
+
+</body>
+</html>

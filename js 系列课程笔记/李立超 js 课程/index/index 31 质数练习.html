@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质数练习</title>
+    <script>
+        /*
+        *  在页面中输入一个数，判断这个数是否为质数
+        *    质数：只能被 1 和它自身整除的数， 1 既不是质数也不是合数，质数必须是大于 1 的自然数
+        */
+        /*
+        while (true){
+            var num = prompt("请输入一个大于 1 的整数：");
+            if (num > 1){
+                break;
+            }
+            alert("请输入一个大于 1 的整数！");
+        }*/
+        var num = prompt("请输入一个大于 1 的整数：");
+
+        // 创建一个变量来保存当前的数的状态
+        // 默认当前 num 是质数
+        var flag = true;
+        
+        // 判断这个值是否合法
+        if (num < 1){
+            alert("该值不合法！")
+        }else{
+            // 判断 num 是否是质数
+            // 获取 2-num 之间的数
+            for (var i = 2;i < num;i++){
+                // 判断 num 是否能被 i 整除，证明不是质数
+                if (num % i ==0){
+                    // 如果 num 能被 i 整除，则说明 num 一定不是质数
+                    // 设置 flag 为 false
+                    flag = false;
+                }
+            }
+            // 如果 num 是质数则输出
+            if (flag){
+                alert(num+ "是质数");
+            }else{
+                alert(num+"不是质数！")
+            }
+        }
+
+        
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

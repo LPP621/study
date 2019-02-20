@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>读取元素的样式</title>
+    <style type="text/css">
+        #box1 {
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            background-color: red;
+            padding: 10px;
+            border: 5px solid yellow;
+        }
+        #box2 {
+            padding: 100px;
+            background-color: #707070;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var box1 = document.getElementById("box1");
+
+            var btn01 = document.getElementById("btn01");
+            btn01.onclick = function () {
+               /*
+               *  clientWidth
+               *  clientHeight
+               *    - 这两个属性可以获取元素的可见宽度和高度
+               *    - 这些属性都是不带 px 的，返回都是一个数字，可以直接计算
+               *    - 会获取元素的宽度、高度，包括内容区和内边距（padding），不包括边框
+               *    - 这些属性都是只读的，不能修改
+               */
+                alert(box1.clientWidth);
+
+                /*
+                * offsetWidth
+                * offsetHeight
+                *  获取元素的整个的大小，整个的高度和宽度，包括内容区、内边距和边框
+                */
+                alert(box1.offsetWidth);
+
+                /*
+                * offsetParent()
+                *   - 可以用来获取当前元素的定位父元素
+                *   - 会获取到离当前元素最近的开启了定位的祖先元素
+                *     如果 box2 没有定位，则会继续网上找到 box3
+                *   - 如果所有的祖先元素都没有开启定位，则会返回 body
+                *
+                */
+                var op = box1.offsetParent;
+                alert(op.id);
+
+                /*
+                *  offsetLeft
+                *     - 当前元素相对于其定位父元素的水平偏移量
+                *  offsetTop
+                *     - 当前元素相对于其定位父元素垂直偏移量
+                *
+                */
+                alert(box1.offsetLeft);
+
+            };
+        }
+    </script>
+</head>
+<body>
+<button id="btn01">按钮按钮111</button>
+<div id="box3" style="position: relative;">
+    <div id="box2" style="position: relative;">
+        <div id="box1"></div>
+    </div>
+</div>
+
+
+</body>
+</html>

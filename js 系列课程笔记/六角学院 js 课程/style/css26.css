@@ -1,0 +1,29 @@
+body {
+    background-image: url(../images/image26-1.jpeg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: bottom;
+}
+html {
+    height: 100%;
+}
+.wrap {
+    max-width: 1920px;
+    height:5000px;
+    background: url(../images/image26-2.jpeg) bottom #404747 no-repeat;
+    /*-webkit-background-size: 1000px 500px;*/
+    /*background-size: 1000px 500px;*/
+}
+.header {
+    height: 180px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background: green;
+}
+.header p {
+    padding: .5em;
+}

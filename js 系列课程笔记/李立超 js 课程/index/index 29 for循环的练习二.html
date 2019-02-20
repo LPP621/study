@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 循环的练习2</title>
+</head>
+<body>
+    打印 1-100 之间所有7的倍数的个数及总和；<br>
+</body>
+<script>
+    var sum = 0;
+    var count = 0;
+    for (var i = 7;i <=100;i++){
+        if (i%7 == 0){
+            document.write(i+"<br>");
+            sum = sum + i;
+            count++;
+        }
+
+    }
+    document.write("共"+count+"个"+"<br>");
+    document.write("1-100 之间所有7的倍数的个数及总和为："+sum);
+</script>
+</html>

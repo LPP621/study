@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>练习42 ES6</title>
+</head>
+<body>
+<script>
+    // 尽量避免影响到全局变量
+    // let 与 const 用来声明区域变量而不会影响到全局
+    /* if(2<3){
+        let a = 1;     // 只在此区域内起作用
+    } */
+
+    // const
+    /*
+    const obj = {
+        url:'http://xx.com'
+    }                          // 此时是可以修改里面的值的，例如加上 const.url = 'x',则URL 就会变成 x
+    Object.freeze(obj);       // 但是加上这句话就相当于冻结了，就不能更改 const 里面的内容了
+    console.log(obj.url)
+    */
+
+    var a = 0;
+    function  changeA() {
+        let a = 0;                // let 可以在局域内修改，const 特性是只读，不能修改，但是 const 如果是 []{} 可以修改，如果不想修改的话可以用 Object.freeze(obj);
+         a = 1;                  // 改变的是局部里面的 a
+        console.log(a);        // 输出 a = 1
+    }
+    changeA();
+    console.log(a);             // 输出 a=0
+</script>
+</body>
+</html>

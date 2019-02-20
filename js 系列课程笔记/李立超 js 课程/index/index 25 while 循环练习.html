@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 定义一个变量，来表示当前的钱数
+        var money = 1000;
+        // 定义一个计数器,统计代码执行的次数
+        var count = 0;
+
+       while(money <= 5000){
+           money *= 1.05;
+
+           // 使 count 自增
+           count++;
+       }
+       console.log(money);
+       console.log("一共需要"+count+"年");
+
+    </script>
+</head>
+<body>
+<div>
+    题目：假如投资的年利率为 5%，试求从 1000 块增长到 5000 块，需要花费多少年？
+</div>
+</body>
+</html>

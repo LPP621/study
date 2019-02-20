@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则语法</title>
+    <script type="text/javascript">
+        /*
+        *  检查一个字符串中是否含有 .
+        *    .  表示任意字符
+        *    如果需要查一个字符串中是否含有 . 在正则表达式中可以使用\ 作为转义字符
+        *    \. 来表示
+        *    \\ 表示 \
+        *       在字符串里也需要用 \\ 来表示 \
+        *
+        * 注意：
+        * 使用构造函数时，由于它的参数是一个字符串，而\是字符串中的转义字符
+        *     如果要使用 \ 则需要使用 \\ 来代替
+        */
+        var reg = /\.|\\/;
+        console.log(reg.test("b."));     // true
+        console.log(reg.test("\\"));     // true
+        console.log(reg.test("b.\\"));     // true
+
+        reg = new RegExp("\.");
+        console.log(reg.test("@#$%$%"));       // true
+
+        reg = new RegExp("\\.");
+        console.log(reg.test("hugyrfdhb"));     //  false
+        console.log(reg.test("hu.lk"));         // true
+
+        /*
+        *  \b 表示单词的边界
+        */
+        reg = /\bb2\b/;
+        console.log(reg.test("b1 b2"));          // true
+        console.log(reg.test("b1 b2016"));          // false
+        console.log(reg.test("b1 bb2"));          // false
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

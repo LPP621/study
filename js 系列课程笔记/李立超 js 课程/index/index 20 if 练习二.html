@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+        * 有一个女方家长要嫁女儿，但是对男方有条件
+        * 高：180cm 以上； 富：1000万以上；帅：500以上
+        * 如果这三个条件同时满足，则："一定会嫁"；
+        * 如果三个条件有为真的情况，则"嫁吧，还行"
+        * 如果三个条件都不满足，则"不嫁"；
+        */
+        var height = prompt("请输入您的身高（CM）：");
+        var money = prompt("请输入您的存款（万）：");
+        var face = prompt("请输入您的颜值（PX）：");
+        alert("您输入的身高、存款、颜值分别是："+height+"cm,"+money+"万,"+face+"px");
+        if (isNaN(height)||isNaN(money)||isNaN(face)){
+            alert("请输入合法数值")
+        }else {
+            if (height > 180 && money > 1000 && face > 500) {
+                alert("一定会嫁！")
+            } else if (height > 180 || money > 1000 || face > 500) {
+                alert("考虑考虑")
+            } else if (height < 180 && money < 1000 && face < 500) {
+                alert("坚决不嫁！")
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

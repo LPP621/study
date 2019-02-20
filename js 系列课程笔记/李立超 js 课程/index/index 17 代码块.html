@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        /*
+        * 我们的程序是由一条一条的语句构成的
+        * 语句是按照自上而下的顺序一条一条的执行的
+        * 在 JS 中可以使用 {} 来为语句进行分组，
+        *      同一个{} 中的语句我们称之为是一组语句
+        *      他们要么都执行，要么都不执行
+        *      一个 {} 中的语句我们也称之为一个代码块
+        *      在代码块的后面就不用再编写分号 ; 了
+        *  JS 中的代码块，只具有分组的作用，没有其他的用途
+        *       代码块内部的内容在外部是完全可见的
+        */
+        {
+            var a = 10;
+            alert("Hello");
+            console.log("你好");
+            document.write("语句");
+        }
+        console.log("a = "+a);       // a = 10;
+    </script>
+</head>
+<body>
+
+</body>
+</html>

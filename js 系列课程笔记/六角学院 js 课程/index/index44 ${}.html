@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>练习44 ${}</title>
+</head>
+<body>
+    <ul class="list">
+
+    </ul>
+
+<script>
+    const list = document.querySelector('.list');
+    const imgUrl = '../images/image41-1.jpeg';
+    const title = '六角学院';
+    // list.innerHTML = '<li><img src=' + imgUrl + '></li>';
+    list.innerHTML = `<li><h3>${title}</h3><img src="${imgUrl}"></li>`;   // 注意：两边不是单引号，而是键盘 ～ 下面的 `` ；
+</script>
+</body>
+</html>

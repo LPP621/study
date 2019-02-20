@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        * Number
+        *  包括整数和浮点数（小数）
+        *  JS 中可以表示的数字的最大值
+        *  Number.MAX_VALUE
+        *       1.7976931348623157e+308
+        *  如果使用 Number 表示的数字超过了最大值，则会返回 Infinity（正无穷）
+        *  Number.MIN_VALUE     大于 0 的最小正数值
+        */
+        // 数字 123
+        var a = 123;
+        console.log(a);
+        // 最大值
+        console.log(Number.MAX_VALUE);
+        console.log(Number.MAX_VALUE * Number.MAX_VALUE);
+
+        // 字符串 123
+        var b = "123";
+        console.log(b);
+
+        // Infinity类型
+        console.log(typeof Infinity);     // number
+
+        /*
+        * 可以使用一个运算符 typeof 来检查一个变量的类型
+        * 语法： typeof 变量
+        * 检查字符串时，会返回 string
+        * 检查数值时，会返回 Number
+        */
+        console.log(typeof b);
+    </script>
+</head>
+<body>
+</body>
+</html>

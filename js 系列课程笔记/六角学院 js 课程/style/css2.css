@@ -1,0 +1,16 @@
+
+body {
+    background-image:url("../images/image2-1.jpeg");
+    background-size:100% 300% ;
+    background-repeat: no-repeat;
+}
+
+.wrap-inner {
+    width: 320px;
+    margin: auto;
+    padding: 15px 120px;
+    background-position: center center;
+    background-color: #ffffff ;
+    opacity: 0.4;
+    font-weight: bold;
+}

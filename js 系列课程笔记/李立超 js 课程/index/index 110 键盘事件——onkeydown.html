@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件</title>
+    <style type="text/css">
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;     /* 一定要加定位，否则不移动*/
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function()
+        {
+
+            var  box1 = document.getElementById("box1");
+            // 为 document 绑定一个按键按下的事件
+            document.onkeydown = function (event) {
+                event = event || window.event;
+
+                // 定义一个变量，来表示移动的速度
+                var speed = 10;
+
+                // 当用户按了 ctrl 以后，速度加快
+                if(event.ctrlKey){
+                    speed = 500;
+                }
+                /*
+                * 37 左
+                * 38 上
+                * 39 右
+                * 40 下
+                */
+                switch (event.keyCode){
+                    case 37:
+                        box1.style.left = box1.offsetLeft - speed +"px";
+                        break;
+                    case 39:
+                        box1.style.left = box1.offsetLeft + speed +"px";
+                        break;
+                    case 38:
+                        box1.style.top = box1.offsetTop - speed +"px";
+                        break;
+                    case 40:
+                        box1.style.top = box1.offsetTop + speed +"px";
+                        break;
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="box1"></div>
+</body>
+</html>

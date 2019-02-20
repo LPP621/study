@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 dom 操作 css 样式</title>
+    <style type="text/css">
+        #box1 {
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            background-color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            /*
+            *  点击按钮以后，修改 box1 的大小
+            */
+            // 获取 box1
+            var box1 = document.getElementById("box1");
+
+            var btn01 = document.getElementById("btn01");
+            btn01.onclick = function () {
+                // 修改 box1 的宽度
+                /*
+                *  语法：
+                *    元素.style.样式名 = 样式值
+                *
+                * 通过 style 属性设置的样式都是内联样式，具有较高的优先级
+                *
+                * 但是如果在样式中写了 !important ,则此时样式会有最高的优先级
+                *   即使通过 JS 也不能覆盖该样式，此时将会导致 JS 修改样式失效
+                *   所以尽量不要给样式加 !important
+                */
+                box1.style.width = "500px";
+            };
+
+            var btn02 = document.getElementById("btn02");
+            btn02.onclick = function () {
+                // 读取 box1 的样式
+                /*
+                *  语法：
+                *     元素.style.样式名
+                *
+                *  通过 style 属性设置和读取的样式都是内联样式
+                *     无法读取样式表中的样式
+                */
+                alert(box1.style.width);
+            }
+        }
+    </script>
+</head>
+<body>
+<button id="btn01">按钮按钮111</button> <button id="btn02">按钮按钮222</button>
+<div id="box1"></div>
+</body>
+</html>

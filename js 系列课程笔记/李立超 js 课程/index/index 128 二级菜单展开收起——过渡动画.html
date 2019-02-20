@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        a,img {
+            border: 0;
+            text-decoration: none;
+        }
+        body {
+            font: 12px/180% Arial, Helvetica, sans-serif,"新宋体";
+
+        }
+        div.sdmenu {
+            width: 150px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            padding-bottom: 10px;
+            background-color: #c0c0c0;
+            color: #fff;
+        }
+        div.sdmenu div {
+            overflow: hidden;
+        }
+        .menuSpan {
+            background-color: darkslategrey;
+        }
+        div.sdmenu div.collapsed {
+            height: 25px;
+        }
+        div.sdmenu div span{
+            display: block;
+            height: 15px;
+            line-height: 15px;
+            overflow: hidden;
+            padding: 5px 25px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        div.sdmenu div a {
+            display: list-item;
+            border: 1px solid lightslategray;
+            text-align: center;
+        }
+        div.sdmenu div a:hover {
+            background-color: cadetblue;
+        }
+    </style>
+    <script type="text/javascript" src="../js/tools.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            /*
+            * 每一个菜单都是一个 div
+            * 当 div 具有 collapsed这个类时， div 就是折叠的状态
+            * 当 div 没有这个类时，div 就是展开的状态
+            */
+            /*
+            *  点击菜单，切换菜单的显示状态
+            */
+            // 获取所有的 class 为 menuSpan 的元素
+            var menuSpan = document.querySelectorAll(".menuSpan");
+
+            // 定义一个变量，保存当前打开的菜单
+            var openDiv = menuSpan[0].parentNode;
+
+            // 为 span 绑定单击响应函数
+            for (var i=0;i<menuSpan.length;i++){
+                menuSpan[i].onclick = function () {
+
+                    // this 代表我当前点击的 span
+                    // 获取当前 span 的的父元素
+                    var parentDiv = this.parentNode;
+
+                    // 在切换之前，获取元素的高度
+                    var begin = parentDiv.offsetHeight;
+
+                    // 切换 parentDiv 的显示
+                    toggleClass(parentDiv,"collapsed");
+
+                    // 在切换类之后获取一个高度
+                    var end = parentDiv.offsetHeight;
+                    // console.log("begin=" +begin+"end = "+end);
+
+                    // 动画效果就是将高度从 begin 向 end 过渡
+                    
+
+                    //方式二（优化）： 判断 openDiv 和 parentDiv 是否相同并且判断是否已经含有这个类
+                    if(openDiv != parentDiv && !hasClass(openDiv,"collapsed")){
+                        // 打开菜单以后，关闭之前打开的菜单
+                        // 为了可以统一处理动画过渡效果，我们希望在这将 addClass 改为 toggleClass
+                        // 此处 toggleClass 不需要具有移除的功能
+                        toggleClass(openDiv,"collapsed");
+                    }
+
+                    //修改 openDiv 为当前的菜单
+                    openDiv = parentDiv;
+
+                }
+            }
+        };
+
+    </script>
+</head>
+<body>
+<div id="my_menu" class="sdmenu">
+    <div class="collapsed">
+        <span class="menuSpan">第一个</span>
+        <a href="javascript:;">1111</a>
+        <a href="javascript:;">1111</a>
+        <a href="javascript:;">1111</a>
+        <a href="javascript:;">1111</a>
+        <a href="javascript:;">1111</a>
+    </div>
+    <div class="collapsed">
+        <span class="menuSpan">第二个</span>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">2</a>
+    </div>
+    <div class="collapsed">
+        <span class="menuSpan">第三个</span>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">3</a>
+    </div>
+    <div class="collapsed">
+        <span class="menuSpan">第四个</span>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">4</a>
+    </div>
+</div>
+
+</body>
+</html>

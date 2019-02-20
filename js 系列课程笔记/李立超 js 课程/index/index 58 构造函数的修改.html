@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数的修改</title>
+    <script type="text/javascript">
+        /*
+        * 创建一个 Person 构造函数
+        *  - 在 Person 构造函数中，为每一个对象都添加了一个 sayName 方法，
+        *      目前我们的方法是在构造函数内部创建的，也就是构造函数每执行一次就会创建一个新的 sayName 方法
+        *    也就是说所有的实例的 sayName 都是唯一的
+        *    这样就导致了构造函数执行一次就会创建一个新的方法
+        *    执行 10000 次就会创建 10000 个新的方法，而 10000 个方法都是一摸一样的，这是完全没有必要的
+        *      完全可以使所有对象共享同一个方法
+        */
+        function Person(name, age, gender){
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            // 向对象中添加一个方法
+            // this.sayName = fun;
+        }
+
+        // 将 sayName 方法在全局作用域中定义
+        /*
+        * 但是将函数定义在全局作用域，污染了全局作用域的命名空间
+        *    而且定义在全局作用域中也很不安全
+        */
+
+        /*function fun() {
+            alert(this.name);
+        }*/
+
+        // 向原型中添加 sayName 方法
+        Person.prototype.sayName = function(){
+            alert(this.name);
+        };
+
+        // 创建一个 Person 的实例
+        var per = new Person("sun",5, "男");
+        var per2 = new Person("sun22222",5, "男");
+        per.sayName();
+        per2.sayName();
+        // console.log(Person.prototype);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

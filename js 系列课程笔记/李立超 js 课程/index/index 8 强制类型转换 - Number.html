@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        /*
+        *  将其他的类型转换为 Number
+        *    转换方式一：
+        *     使用 Number() 函数
+        *           - 字符串(String) --》 数字(Number)
+        *               1、纯数字的字符串，则直接转换为数字
+        *               2、如果字符串中有非数字的内容，则转换为 NaN
+        *               3、空字符串或者全是空格的字符串，则转为 0
+        *           - 布尔值(Boolean) --》 数字(Number)
+        *               1、 true 转为 1
+        *               2、 false 转为 0
+        *           - null --》  数字
+        *              0
+        *           - undefined --》 数字
+        *              NaN
+        *   转换方式二：
+        *       - 这种方式用来对付字符串(可以将字符串中有效的整数取出来然后转换为 number,遇到一个非数字后面就不读了)
+        *       - parseInt()  把字符串转换为一个整数
+        *       - parseFloat()  把一个字符串转换为浮点数
+        *       - 如果对非 String 使用 parseInt() 或 parseFloat() ，他会先将其转换为 String 然后再操作
+        */
+        var a = "123";
+        console.log(typeof a);       // string
+        console.log(a);
+
+        // 调用 Number() 函数将 a 转换为 Number 类型
+        a = Number(a);
+        console.log(typeof a);       // number
+        console.log(a);              // 123
+
+        var b = "123.12px12.25";
+        b = parseInt(b);
+        console.log(typeof b);       // number
+        console.log(b);              // 123
+
+        var c = "456.12px56";
+        c = parseFloat(c);
+        console.log(typeof c);        // number
+        console.log(c);              // 456.12
+
+        var d = true;
+        d = parseInt(d);
+        console.log(typeof d);       // number
+        console.log(d);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

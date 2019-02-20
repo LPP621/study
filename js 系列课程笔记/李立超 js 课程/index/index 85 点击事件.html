@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击事件</title>
+</head>
+<body>
+
+    <!--
+       我们可以在事件对应的属性中设置一些 JS 代码，当事件触发时，代码就会执行
+
+       但是这种方法不推荐使用，这种称为结构和行为耦合，不方便维护
+
+       可以为按钮的对应事件绑定处理函数的形式来响应事件
+    -->
+    <!--<button id="btn1" onclick="alert('按钮 1 被点击了')">按钮1</button>-->
+    <!--<button id="btn2" ondblclick="alert('按钮 2 被点击了')">按钮2</button>-->
+    <button id="btn">按钮</button>
+    <script type="text/javascript">
+        /*
+        * 事件，就是用户和浏览器之间的交互行为
+        *   比如：点击按钮，鼠标移动、关闭窗口
+        */
+        /*
+        * onmousemove()
+        *     -  鼠标移动上去
+        */
+
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            alert('按钮被点击了');
+        };
+    </script>
+
+</body>
+</html>

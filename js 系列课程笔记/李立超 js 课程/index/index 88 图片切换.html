@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片切换的练习</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #outer {
+            width: 360px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        #outer img {
+            width: 360px;
+            height: 350px;
+        }
+        #outer button {
+            width: 50px;
+            height: 24px;
+        }
+        button:active {
+            background-color: dodgerblue;
+        }
+        p {
+            background-color: #f0f0f0;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            /*
+            * 点击按钮切换图片
+            */
+
+            // 获取两个按钮
+            var Btn1 = document.getElementById("btn1");
+            var Btn2 = document.getElementById("btn2");
+
+            /*
+            * 要切换图片就是要修改图片的 src 属性
+            */
+            // 获取 img 标签
+            var img = document.getElementsByTagName("img")[0];
+
+            // 创建一个数组，用来保存图片的路径
+            var imgArr = ["../images/01.jpg","../images/02.jpg","../images/03.jpg","../images/04.jpg","../images/05.jpg"];
+
+            // 创建一个变量，来保存当前正在显示的那个图片的索引
+            var index = 0;
+
+            // 设置提示文字
+            var info = document.getElementById("info");
+            info.innerHTML = "一共有"+imgArr.length+"张图片，当前是第"+(index+1)+"张";    // 不写这句话的话刚进入页面就不显示p 内容
+            // 分别为两个按钮绑定单击响应函数
+            Btn1.onclick = function () {
+                /*
+                *  切换到上一张，索引自减
+                */
+                index--;
+
+                // 判断 index 是否小于 0
+                if (index<0){
+                    index = imgArr.length-1;
+                }
+                img.src = imgArr[index];
+
+                // 当点击按钮以后，重新设置信息
+                info.innerHTML = "一共有"+imgArr.length+"张图片，当前是第"+(index+1)+"张";
+
+            };
+            Btn2.onclick = function () {
+                /*
+                *  切换到下一张，索引自增
+                */
+
+                // 要修改一个元素的属性  元素.属性 = 属性值
+                index++;
+                if (index>imgArr.length-1){
+                    index = 0;
+                }
+                img.src = imgArr[index];
+                info.innerHTML = "一共有"+imgArr.length+"张图片，当前是第"+(index+1)+"张";
+
+            };
+        }
+    </script>
+</head>
+<body>
+<div id="outer">
+    <p id="info"></p>
+    <img src="../images/01.jpg" alt="sushi">
+    <button id="btn1">上一张</button>
+    <button id="btn2">下一张</button>
+</div>
+</body>
+</html>

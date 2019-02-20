@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <script type="text/javascript">
+
+        //  创建一个数组
+        var arr = [1,1,2,3,4,5,5,6,2,3,3,8];
+
+        // 去除数组中重复的元素
+        // 获取数组中的每一个元素
+        for (var i=0;i<arr.length;i++){
+            //console.log(arr[i]);
+            // 获取当前元素后的所有元素
+            for (var j=i+1;j<arr.length;j++){
+                // 判断两个元素的值是否相等，如果想等，则证明出现了重复的元素,则删除 j 所对应的元素
+                if (arr[j]==arr[i]){
+                    arr.splice(j,1);
+                    // 当删除了当前 j 所在位置的元素之后，后边的元素会自动补位
+                    // 此时将不会再比较这个元素，所以需要再比较一次 j 所在位置的元素,由于比较的时候是使 j 自增 1，所以如果需要再比较同一位置的元素的话就需要 j 自减 1
+                    j--;
+                }
+            }
+        }
+        console.log(arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

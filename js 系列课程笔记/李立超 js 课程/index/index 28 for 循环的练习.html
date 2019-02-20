@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 循环的练习</title>
+    <script>
+        // 创建一个变量用来保存奇数之和
+        var sum = 0;
+
+        // 第一步：打印 1-100 之间的数
+        for (var i = 1;i <= 100;i++){
+            // 判断 i 是否为奇数
+            // 不能被二整除
+            if (i%2 !== 0) {    // 如果 i 除以 2 有余数
+                document.write(i+"<br />");         // js 中的换行是"\n"
+                sum = sum+i;
+            }
+        }
+        document.write("奇数之和为："+sum);     // 写在循环外面，否则会每执行一次循环就会打印一次
+    </script>
+</head>
+<body>
+    打印 1-100 之间的所有奇数之和
+</body>
+</html>

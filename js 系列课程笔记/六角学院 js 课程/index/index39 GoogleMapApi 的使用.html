@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    // lat: 纬度     lng: 经度     zoom 越大越详细
+
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 38.042014, lng: 114.518306},
+            zoom: 15
+        });
+        var marker = new google.maps.Marker({
+            position: {lat: 38.0431137, lng: 114.5119533},
+            map: map,
+            title:'北国商城'      // 当鼠标移上去所显示的标题
+        })
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&callback=initMap" async defer></script>
+</body>
+</html>

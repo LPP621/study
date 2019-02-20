@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则语法</title>
+    <script type="text/javascript">
+        /*
+        * 创建一个正则表达式检查一个字符串中是否含有 aaa
+        */
+
+        /*
+        * 量词
+        *   - 通过量词可以设置一个内容出现的次数
+        *   - 量词只对它前边的一个内容起作用
+        *   - {n} 正好出现 n 次
+        *     {m,n}  出现 m~n 次
+        *     {m,}   出现 m 次以上
+        *     + 至少出现一次     相当于{1,}
+        *     * 0 个或多个，有没有都是 true  相当于{0,}
+        *     ?  0 个或 1 个   相当于{0,1}
+        */
+
+        var reg = /a{3}/;
+        console.log(reg.test("aaabc"));    //  true
+
+        var reg = /(ab){3}/;
+        console.log(reg.test("abababcd"));    // true
+
+        /*
+        * 检查一个字符串中是否以 a 开头
+        *    ^ 表示开头
+        *    $ 表示结尾
+        *
+        */
+        reg = /^a/;     // 匹配开头的 a
+        console.log(reg.test("adjhkhdf"));   //true
+        console.log(reg.test("bhdjgyaakj"));   // false
+
+        reg = /a$/;     // 匹配结尾的 a
+        console.log(reg.test("adjhkhdfa"));   //true
+        console.log(reg.test("bhdjgyaakj"));   // false
+
+        reg = /^a$/;  // 只能是a
+        console.log(reg.test("adjhkhdfa"));    // false
+        console.log(reg.test("aa"));           // false
+        console.log(reg.test("a"));            // true
+
+        reg = /^a|a$/;   // 以 a 开头或者以 a 结尾
+
+        /*
+        * 创建一个正则表达式，用来检查一个字符串是否是一个合法的手机号
+        *
+        * 手机号的规则
+        *   - 11 位
+        *   - 以 1 开头  ^1|^0 [3-9]{10}$
+        *
+        */
+        var phoneReg = /^1|^0[0-9]{10}$/;
+        console.log(phoneReg.test("18799698569"));   // true
+        console.log(phoneReg.test("06259854336"));    //  true
+    </script>
+</head>
+<body>
+
+</body>
+</html>

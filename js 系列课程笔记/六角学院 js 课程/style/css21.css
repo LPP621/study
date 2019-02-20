@@ -1,0 +1,6 @@
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;    /*不能用 color，color 不显示*/
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>练习43 let 和 const 对 for 的影响</title>
+</head>
+<body>
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+<script>
+    const listLen = document.querySelectorAll('.list li').length;
+    for (let i=0;i<listLen;i++){
+        document.querySelectorAll('.list li')[i].addEventListener('click',function () {
+            alert(i+1);
+        })
+    }
+    // 如果 for 里面用 var 定义 i 的话，点击 li 弹出来就是 li 标签的个数了
+</script>
+</html>

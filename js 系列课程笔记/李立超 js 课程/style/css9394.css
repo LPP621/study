@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#total {
+    margin-left: 30%;
+    margin-top: 5%;
+}
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+th {
+    border: 2px solid;
+    padding: 3px;
+}
+td {
+    border: 2px solid;
+    padding: 5px;
+}
+#inner2 {
+    width: 305px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 80px;
+}
+#inner2 p {
+    padding-top: 5px;
+    padding-left: 10px;
+    color: indianred;
+}
+#inner2 div {
+    padding-left: 20px;
+    line-height: 40px;
+}
+#inner2 button {
+    margin-left: 30%;
+    width: 100px;
+    height: 26px;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 14px;
+}
+#inner2 input {
+    width: 200px;
+    height: 20px;
+    margin-left: 3px;
+}

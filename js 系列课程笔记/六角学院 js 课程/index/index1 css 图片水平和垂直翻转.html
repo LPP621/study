@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>css图片水平和垂直翻转</title><base target="_blank" />
+    <meta charset="utf-8" />
+    <style>
+        /*水平翻转*/
+        .hewenqiflipx {
+            -moz-transform:scaleX(-1);
+            -webkit-transform:scaleX(-1);
+            -o-transform:scaleX(-1);
+            transform:scaleX(-1);
+            /*IE*/
+            filter:FlipH;
+        }
+
+        /*垂直翻转*/
+        .hewenqiflipy {
+            -moz-transform:scaleY(-1);
+            -webkit-transform:scaleY(-1);
+            -o-transform:scaleY(-1);
+            transform:scaleY(-1);
+            /*IE*/
+            filter:FlipV;
+        }
+
+        /*基于webkit核心的浏览器*/
+        /*水平翻转*/
+        .hovertreeflipx { transform: rotateY(180deg); }
+
+        /*垂直翻转*/
+        .hovertreeflipy { transform: rotateX(180deg); }
+        a{color:blue;}
+    </style>
+</head>
+<body>
+<div>
+    <h2>css图片水平和垂直翻转</h2><a href="http://hovertree.com/h/bjaf/d339euw9.htm">原文</a>
+    <a href="http://hovertree.com">首页</a>
+    <a href="http://hovertree.com/texiao/">特效</a>
+    <br />
+</div>
+原图：<br />
+<img src="http://hovertree.com/hvtimg/bjafjd/btl1cbfc.gif" />
+<br />水平翻转图：<br />
+<img src="http://hovertree.com/hvtimg/bjafjd/btl1cbfc.gif"  class="hovertreeflipx"/>
+<br />垂直翻转图：<br />
+<img src="http://hovertree.com/hvtimg/bjafjd/btl1cbfc.gif" class="hewenqiflipy" />
+</body>
+</html>

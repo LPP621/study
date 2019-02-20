@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+        *  JS 中表示的和 body 中表示的不同
+        *   在字符串中使用转义字符输出 Unicode 编码,JS 中使用的是 16 进制
+        *   "\u四位编码"
+        */
+        console.log("\u2621");
+        console.log("\u1077");
+        console.log("\u2603");
+        console.log("我\u{1F491}\u{1F492}\u{1F493}\u{1F495}\u{1F496}\u{1F497}\u{1F498}\u{1F499}你");
+        console.log("\u7231")
+    </script>
+</head>
+<body>
+    <!--在网页中使用Unicode 编码
+        "&#编码",但是在这里需要使用 10 进制
+    -->
+<h1>&#9761</h1>
+<h2 style="font-size: 100px;">&#9731</h2>
+<h3 style="font-size: 80px;">我&#128145&#128146&#128147&#128149&#128150&#128151&#128152&#128153你</h3>
+<h4>&#29233</h4>
+</body>
+</html>

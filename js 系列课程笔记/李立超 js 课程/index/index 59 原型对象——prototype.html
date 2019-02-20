@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型对象</title>
+    <script type="text/javascript">
+        /*
+        * 原型 prototype
+        *
+        * 我们所创建的每一个函数，解析器都会向函数中添加一个属性 prototype
+        *     每一个函数都有他自己的 prototype, 都是唯一的
+        *
+        *   这个属性对应着一个对象，这个对象就是原型对象
+        *
+        *   如果函数作为 普通函数 调用， prototype 没有任何作用；
+        *   当函数通过 构造函数 调用时，它所创建的对象中都有一个隐含的属性
+        *       指向该构造函数的原型对象，我们可以通过__proto__来访问该属性
+        *
+        *  原型对象就相当于一个 公共 的区域，所有同一个类的实例都可以访问到这个原型对象
+        *      我们可以将对象中共有的内容，统一设置到原型对象中。
+        *
+        *  当我们访问对象的一个 属性或方法 时，它会先在对象自身中寻找，如果有则直接使用
+        *      如果没有则会去原型对象中之用，如果有则使用
+        *
+        *  以后创建构造函数时，可以将这些对象共有的属性和方法，统一添加到构造函数的原型对象中，
+        *    这样不用分别为每一个对象添加，也不会影响到全局作用域，就可以使每一个对象都具有这些属性和方法了
+        */
+
+        /*
+        function Person() {
+
+        }
+        function MyClass() {
+
+        }
+        console.log(MyClass.prototype == Person.prototype);   //  false
+        */
+        function MyClass() {
+
+        }
+
+        // 向原型对象中添加一个属性
+        MyClass.prototype.a = 123;
+
+        // 向 MyClass 的原型中添加一个方法
+        MyClass.prototype.sayHello = function () {
+            alert("Hello");
+        };
+
+        // 创建一个实例对象
+        var mc = new MyClass();
+        var mc2 = new MyClass();
+
+        // 向 mc2 中添加 a 属性
+        mc2.a = "我是 mc2 中的 a";
+
+        // console.log(MyClass.prototype);
+        //  console.log(mc.__proto__);
+        // console.log(MyClass.prototype == mc.__proto__);     // true
+        // console.log(MyClass.prototype == mc2.__proto__);     // true
+
+        console.log(mc.a);        // 123
+        console.log(mc2.a);        // 我是 mc2 中的 a
+        mc.sayHello();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

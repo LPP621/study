@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>完成轮播图页面</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #outer {
+            width: 290px;
+            height: 208px;
+            margin: 50px auto;
+            background-color: yellowgreen;
+            padding: 10px 0;
+            position: relative;
+            overflow: hidden;      /* 裁剪溢出的内容*/
+        }
+        #imgList {
+            list-style: none;   /* 去除列表点符号*/
+            /*width: 1600px;      !* 设置 ul 的宽度*!*/
+            position: absolute;        /* 开启绝对定位*/
+            left: -290px;           /* 设置偏移量 */ /* 每向左移动一个图片的宽度，图片就会移一部分*/
+        }
+        #imgList li {
+            float: left;
+            margin: 0 3px;
+        }
+        /* 设置导航按钮*/
+        #navDiv {
+            position: absolute;   /*设置绝对定位*/
+            bottom: 3px;
+        }
+        #navDiv a {
+            float: left;      /* 浮动之后内联元素会变成块级元素显示*/
+            width: 18px;
+            height: 18px;
+            background: red;
+            margin: 0 5px;      /* 设置a 的左右外边距*/
+            opacity: 0.5;
+            filter:alpha(opacity=50);   /*兼容 IE8*/
+        }
+
+        /* 设置鼠标移入的效果*/
+        #navDiv a:hover {
+            background: slategray;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            // 设置 imgList 的宽度
+            // 获取 imgList
+            var imgList = document.getElementById("imgList");
+            // 获取页面中所有的 img 标签
+            var imgArr = document.getElementsByTagName("img");
+            // 设置 imgList 的宽度
+            imgList.style.width = 325*imgArr.length+"px";
+
+            // 设置导航按钮居中
+            // 获取 navDiv
+            var navDiv = document.getElementById("navDiv");
+            // 获取 outer
+            var outer = document.getElementById("outer");
+            // 获取 navDiv 的 left 值
+            navDiv.style.left = (outer.offsetWidth - navDiv.offsetWidth)/2 + "px";
+
+            // 默认显示图片的索引
+            var index = 0;
+
+            // 获取所有的 a
+            var allA = document.getElementsByTagName("a");
+            // 设置默认选中的效果(一进入页面时的效果)
+            allA[index].style.backgroundColor = "slategray";
+
+        }
+    </script>
+</head>
+<body>
+<!--创建一个外部的 div,来作为大的容器-->
+<div id="outer">
+    <!--创建一个 ul ，用于放置图片-->
+    <ul id="imgList">
+        <li><img src="../images/02.jpg" alt=""></li>
+        <li><img src="../images/03.jpg" alt=""></li>
+        <li><img src="../images/04.jpg" alt=""></li>
+        <li><img src="../images/05.jpg" alt=""></li>
+    </ul>
+    <!-- 创建导航按钮 -->
+    <div id="navDiv">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</div>
+</body>
+</html>

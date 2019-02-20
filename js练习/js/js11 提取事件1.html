@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<script type="text/javascript">
+	window.onload=function ()           //不加 window.onload 的时候下面代码会执行到 body 标签之前就结束了而无法读取 body 里面的代码，window.onload 是等页面加载完之后才会执行 window.onload 里面的代码
+	{
+		var oBtn=document.getElementById('btn1');
+
+		oBtn.onclick=function () 		//匿名函数
+		{
+			// body...
+			alert('a');
+		}
+	}
+</script>
+<body>
+	<input id="btn1" type="button" name="" value="按钮">
+
+</body>
+</html>

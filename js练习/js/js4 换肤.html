@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link id="l1" rel="stylesheet" type="text/css" href="css1.css">        <!-- 任何标签都可以加 id ，包括 link -->
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript">
+		function skin1()
+		{
+			var oL=document.getElementById('l1');
+			oL.href='css1.css';                     //点击皮肤1链接到 css1.css
+		}
+		function skin2()
+		{
+			var oL=document.getElementById('l1');
+			oL.href='css2.css';                     //点击皮肤2链接到 css2.css
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="皮肤1" onclick="skin1()">
+	<input type="button" name="" value="皮肤2" onclick="skin2()">
+
+</body>
+</html>

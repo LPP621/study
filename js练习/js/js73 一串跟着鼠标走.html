@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+	div {width: 21px;height: 21px;background: pink;position: absolute; border-radius: 100%;}
+
+    </style>
+	<script type="text/javascript">
+		function getPos(ev)             // 定义函数
+		{
+			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+			var scrollLeft=document.documentElement.scrollLeft||document.body.scrollLeft;
+			
+			return {x: ev.clientX+scrollLeft,y: ev.clientY+scrollTop }     // 返回 json 形式
+		}
+		document.onmousemove=function(ev)
+		{
+			var aDiv=document.getElementsByTagName('div');
+			var oEvent=ev||event;
+
+			var pos=getPos(oEvent);
+
+			for(var i=aDiv.length-1;i>0;i--)         // 从最后一个开始，依次到第一个
+			{
+				aDiv[i].style.left=aDiv[i-1].offsetLeft+'px';      //后一个 div 的left 是前一个div 的 offsetLefto，后一个跟着前一个走
+				aDiv[i].style.top=aDiv[i-1].offsetTop+'px';
+			}
+			aDiv[0].style.left=pos.x+'px';          // 第一个 div 跟着鼠标走
+			aDiv[0].style.top=pos.y+'px';
+		}
+	</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+</html>

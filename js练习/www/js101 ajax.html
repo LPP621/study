@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>只是代码</title>
+	<script type="text/javascript">
+		window.onload=function()            // onload 作用：初始化整个程序
+		{
+			var oBtn=document.getElementById('btn1');
+
+			oBtn.onclick=function()
+			{
+				
+				// 1. 创建 ajax 对象
+
+				if(window.XMLHttpRequest)            // IE6 下如果用没有定义的变量那么就会报错，所以需要加 window，变为属性
+				{
+					// 非 IE6
+					var oAjax=new XMLHttpRequest();
+				}
+				else
+				{
+					// IE6
+				    var oAjax=new ActiveXObject("Microsoft.XMLHttp");
+				}
+
+				//alert(oAjax);        // 此时在IE6 下没有定义 XMLHttpRequest 只会弹出一个 undefined 
+
+
+				// 2. 连接服务器
+
+				// open(方法 ,文件名(+阻止缓存), 请求方式（异步传输）)
+				oAjax.open('GET','a.txt?t='+new Date().getTime(),true);
+
+				// 3. 发送请求
+				oAjax.send();
+
+				// 4. 接收返回
+				oAjax.onreadystatechange=function()         // onreadystatechange : 和服务器之间有交互的时候发生的一个事件
+				{
+					//oAjax.readyState         // 浏览器和服务器之间进行到哪一步了
+					if(oAjax.readyState==4)
+					{
+						if(oAjax.status==200)      // status:http 状态码，告诉我们这个事件是成功还是失败  200是成功；
+						{
+							alert('成功：'+oAjax.responseText);
+						}
+						else
+						{
+							alert('失败');
+						}
+					}
+				}
+				
+			};
+		}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" name="" value="读取">
+</body>
+</html>

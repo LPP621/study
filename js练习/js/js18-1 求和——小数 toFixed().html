@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toFixed() 方法可把 Number 四舍五入为指定小数位数的数字。</title>
+</head>
+<body>
+<input id="txt1" type="text">
+<input id="txt2" type="text">
+<input id="btn1" type="button" value="求和">
+
+</body>
+<script type="text/javascript">
+    var Txt1 = document.getElementById("txt1");
+    var Txt2 = document.getElementById("txt2");
+    var Btn1 = document.getElementById("btn1");
+    Btn1.onclick=function () {
+        var n1=Number(Txt1.value);
+        var n2=Number(Txt2.value);
+        if(isNaN(n1)||isNaN(n2)){
+            alert("请输入正确的数字");
+        }else{
+            alert(n1+n2);
+        }
+    };
+
+</script>
+</html>

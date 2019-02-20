@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#div1 {width: 300px;height: 300px;background: pink;position: absolute;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oDiv=document.getElementById('div1');
+
+			var disX=0;
+			var disY=0;
+
+			oDiv.onmousedown=function(ev)
+			{
+				var oEvent=ev||event;
+
+				disX=oEvent.clientX-oDiv.offsetLeft;      // 鼠标摁下时，鼠标离左边框的距离=鼠标的坐标- div 左边框的左边距
+				disY=oEvent.clientY-oDiv.offsetTop;
+				
+				if(oDiv.setCapture)
+				{
+					//IE
+					oDiv.onmousemove=mouseMove;             // 鼠标在 document 移动时，边框跟着鼠标走
+					oDiv.onmouseup=mouseUp;                    // 鼠标不点击的时候，将鼠标移动的效果取消
+					oDiv.releaseCapture();
+				}
+				else
+				{
+					// Chrome、FF
+					document.onmousemove=mouseMove;            // 鼠标在 document 移动时，边框跟着鼠标走		
+					document.onmouseup=mouseUp;                    // 鼠标不点击的时候，将鼠标移动的效果取消
+				}
+
+				function mouseMove(ev)
+				{
+					var oEvent=ev||event;
+
+					oDiv.style.left=oEvent.clientX-disX+'px';      // 鼠标移动时，div 左边框的左边距=鼠标的坐标- 鼠标离左边框的距离
+					oDiv.style.top=oEvent.clientY-disY+'px';
+				}
+
+				function mouseUp(ev)
+				{
+					this.onmousemove=null;
+					this.onmouseup=null;
+
+					if(oDiv.releaseCapture)
+					{
+						oDiv.releaseCapture();
+					}
+				}
+				return false;
+			}
+			
+			
+		}
+	</script>
+</head>
+<body>
+	hgsgfjsdbcmhvuishyo
+	<div id="div1">
+		hhgigiuygasvdjsygtd
+	</div>
+	jshduydrewbhrdjb
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>访问的URL 需要是服务器中的地址，此程序只用来实验</title>
+	<!-- 通过 ajax 读取的是字符串的长度 -->
+	<!-- eval 可以把一个语句里面的内容解析成 js 可以识别的东西 -->
+
+	<!-- 引出 ajax 文件 -->
+	<script src='ajax.js'></script> 
+
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oBtn=document.getElementById('btn1');
+			var oUl=document.getElementById('ul1');
+
+			// oBtn.onclick=function()
+			// {
+			// 	ajax('相对路径',function(str){
+			// 		alert(str);
+			// 	},function()
+			// 	{
+			// 		alert('失败');
+			// 	})      // 如果路径读取成功就会执行 function 回调函数
+			// }
+
+			// 改进：取消缓存，每次点击按钮的时候都会自动更新，都不同
+			// 从服务器行将所需要的数据读出来并且创建 li 
+			oBtn.onclick=function()
+			{
+				// 加 t 是给浏览器看的，为了每次的 url 都不一样
+				ajax('aaa.txt?t='+new Date().getTime(),function(str){
+					var arr=eval(str);
+
+					for(var i=0;i<arr.length;i++)
+					{
+						var oLi=document.creatElement('li');
+
+						oLi.innerHTML='用户名：<strong>'+arr[i].user+'</strong>密码：<span>'+arr[i].pass+'</span>';
+
+						oUl.appendChild(oLi);
+					}
+
+
+				},function(){
+					alert('失败');
+				})
+		}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" name="" value="读取">    <!-- name 和ID的用法类似，name是用来给后台用的，ID 是传递给前台的 -->
+	<ul id="ul1">
+	</ul>
+</body>
+</html>

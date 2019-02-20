@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#div1 {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			
+		}
+	</style>
+	<script type="text/javascript">
+		// 鼠标放上去变成绿色
+		function toGreen()           
+		{
+			document.getElementById('div1').style.width='300px';
+			document.getElementById('div1').style.height='300px';
+			document.getElementById('div1').style.background='green';
+
+		}
+		// 鼠标移开变成蓝色
+		function toBlue()
+		{
+			document.getElementById('div1').style.width='200px';
+			document.getElementById('div1').style.height='200px';
+			document.getElementById('div1').style.background='blue';
+		}
+	</script>
+
+</head>
+<body>
+	<div id="div1" onmouseover="toGreen()" onmouseout="toBlue()">
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		 window.onload=function()
+		 {
+		 	var oTab=document.getElementById('tab1');
+		 	var oBtn=document.getElementById('btn1');
+		 	var oTxt=document.getElementById('name');
+
+		 	oBtn.onclick=function()
+		 	{
+		 		
+
+		 		for(var i=0;i<oTab.tBodies[0].rows.length;i++)
+		 		{
+		 			var sTab=oTab.tBodies[0].rows[i].cells[1].innerHTML.toLowerCase();         //toLowerCase 可以把 js 中的字段全部变为小写的形式
+		 			var sTxt=oTxt.value.toLowerCase();
+
+		 			var arr=sTxt.split(' ');        // 将搜索用空格隔开
+
+		 			oTab.tBodies[0].rows[i].style.display='none';
+
+		 			for(var j=0;j<arr.length;j++)
+		 			{
+			 			if(sTab.search(arr[j])!=-1)      //定义的数组中的某一部分输入如果能搜到
+			 			{
+			 				oTab.tBodies[0].rows[i].style.display='block';
+			 			}
+		 			
+		 			}
+		 		}
+		 	}
+
+		 	
+		 }
+	</script>
+</head>
+<body>
+	姓名： <input id=	'name' type="text">
+	<input id="btn1" type="button" name="" value="搜索">
+	<table id="tab1" border="1" width="500px">
+		<thead>
+			<td>序号</td>
+			<td>姓名</td>
+			<td>年龄</td>
+		</thead>
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td>Mary</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Jack</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Lili</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Casy</td>
+			<td>29</td>
+		</tr>
+		</tbody>
+	</table>
+</body>
+</html>

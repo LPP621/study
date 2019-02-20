@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oBtn=document.getElementById('btn1');
+			var oUl=document.getElementById('ul1');
+
+			oBtn.onclick=function()
+			{
+				var oLi=document.createElement('li');    // createElement：创建新元素
+
+				//父级.appendChild(子节点)；
+				oUl.appendChild(oLi);           // appendChild: 将创建的元素插入到相应的父级节点下面去
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" name="" value="创建li">
+	<ul id="ul1">
+		
+	</ul>
+
+</body>
+</html>

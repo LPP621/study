@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#div1 {width: 200px;height: 200px;background: skyblue;display: none;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oBtn=document.getElementById('btn1');
+			var oDiv=document.getElementById('div1');
+
+			oBtn.onclick=function(ev)
+			{
+				var oEvent=ev||event;        // || 防止event 事件不兼容的问题
+
+				oDiv.style.display='block';
+
+				oEvent.cancelBubble=true;     // 阻止事件冒泡行为，但是此时 div 显示的时候点击 div 也会触发冒泡事件隐藏掉 div 
+			}
+			document.onclick=function()
+			{
+				oDiv.style.display='none';
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" name="" value="显示">
+	<div id="div1">
+		
+	</div>
+</body>
+</html>

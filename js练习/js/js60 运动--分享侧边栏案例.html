@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>本章代码出现错误bug！！！</title>
+	<style type="text/css">
+		#div1 {width: 150px;height: 200px;position: absolute;background: #ccc;}
+		#div1 span {width: 20px;height: 60px;position: absolute;background: pink;line-height: 20px;right: -20px;top: 70px;}  
+		/*right 是根据 span 的宽度来定的，在div 的右边框的-20像素处*/
+
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oDiv=document.getElementById('div1');
+			oDiv.onmouseover=function()
+			{
+				startMove(10,0);
+			};
+			oDiv.onmouseout=function()
+			{
+				startMove2(-10,-150);
+			};
+		}
+		var timer=null;
+
+		function startMove(speed,iTarget)
+		{
+			var oDiv=document.getElementById('div1');
+
+			clearInterval(timer);
+			timer=setInterval(function()
+			{
+				if(oDiv.offsetLeft==iTarget)
+				{
+					clearInterval(timer);
+				}
+				else
+				{
+					oDiv.style.left=oDiv.offsetLeft+speed+'px';
+				}
+			},30);
+		}
+		function startMove2()
+		{
+			var oDiv=document.getElementById('div1');
+			
+			clearInterval(timer);
+			timer=setInterval(function()
+			{
+				if(oDiv.offsetLeft==iTarget)
+				{
+					clearInterval(timer);
+				}
+				else
+				{
+					oDiv.style.left=oDiv.offsetLeft+speed+'px';
+				}
+			},30);
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<span>分享到</span>
+	</div>
+
+</body>
+</html>

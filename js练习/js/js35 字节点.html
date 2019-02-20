@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oUl=document.getElementById('ul1');
+
+			//IE6-8
+			//alert(oUl.childNodes.length);      //此时5个文本节点是因为把 li 标签前后的空文本也算成了一个节点（浏览器不一样弹出的也不一样）
+
+			//childnodes 不兼容
+			// for(var i=0;i<oUl.childNodes.length;i++)
+			// {
+
+			// 	//nodeType==3  ->文本节点
+			// 	//nodeType==1  ->元素节点
+			// 	//alert(oUl.childNodes[i].nodeType);
+
+			// 	if(oUl.childNodes[i].nodeType==1)
+			// 	{
+			// 		oUl.childNodes[i].style.background='red';
+			// 	};
+				
+			// };
+
+
+
+			//children 兼容,算的仅仅是元素
+			alert(oUl.children.length);
+		}
+	</script>
+</head>
+<body>
+<ul id="ul1">
+	<li></li>
+	<li></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input {
+            width: 300px;
+            height: 100px;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="demo">
+</body>
+<script type="text/javascript">
+    var total =0;
+    var flag='+';
+    var demo = document.getElementById("demo");
+    demo.addEventListener('keydown',function (event) {
+        var event=event||window.event;
+        a = event.keyCode;
+
+        switch (a) {
+            case 37:
+                flag = '*';
+                break;
+            case 38:
+                flag = '+';
+                break;
+            case 39:
+                flag = '/';
+                break;
+            case 40:
+                flag = '-';
+                break;
+        }
+        //判断完成是数字后，就直接total=(total)+flag+str(a)
+        demo.value=flag;
+    })
+</script>
+</html>

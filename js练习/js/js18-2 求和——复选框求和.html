@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框求和</title>
+</head>
+<body>
+<input type="checkbox" value="5">5 <br>
+<input type="checkbox" value="6">6 <br>
+<input type="checkbox" value="5">5 <br>
+<input type="checkbox" value="4">4 <br>
+<input type="checkbox" value="3">3 <br>
+<input type="checkbox" value="2">2 <br>
+<button id="btn01">求和</button>
+</body>
+<script type="text/javascript">
+    var btn01 = document.getElementById("btn01");
+    btn01.onclick=function () {
+        var value = 0;
+        var checkArray = document.getElementsByTagName("input");
+        for (var i=0;i<checkArray.length;i++){
+            if (checkArray[i].checked==true){
+                value += checkArray[i].value;
+            }
+        }
+        console.log(value);
+    };
+
+</script>
+</html>

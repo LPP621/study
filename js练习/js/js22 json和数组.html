@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var json={a:12, b:5, c:7};
+		var arr=[12, 5, 7];
+
+		// 1.
+		// alert(json['a']);
+		// alert(arr[0]);
+
+		//2.
+		// alert(json.length);
+		// alert(arr.length);
+
+		//3.循环
+		for (var i = 0;i<arr.length; i++)
+		{
+			alert('第'+ i + '个东西:' +arr[i]);
+		}
+
+		//或者
+		// for(var i in arr)
+		// {
+		// 	alert('第'+ i + '个东西:' +arr[i]);
+		// }
+
+		//4. json 循环
+		for(var i in json)
+		{
+			alert('第'+ i + '个东西:' +json[i]);
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<!-- 循环：
+	数组：for 0-length 的循环
+	json: for in 循环 -->
+	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				width: 100px;
+				height: 100px;
+				background: skyblue;
+			}
+		</style>
+		<script type="text/javascript">
+			function setStyle(name,value)
+			{
+				var oDiv=document.getElementById('div1');
+				oDiv.style[name]=value;
+			}              //[]的作用：具体名字的属性和名字可以随意制定
+			// function toWidth() {
+			// 	// body...
+			// 	var oDiv=document.getElementById('div1');
+			// 	oDiv.style.width='400px';
+			// }
+			// function toHeight() {
+			// 	// body...
+			// 	var oDiv=document.getElementById('div1');
+			// 	oDiv.style.height='400px';
+			// }
+			// function toPink() {
+			// 	// body...
+			// 	var oDiv=document.getElementById('div1');
+			// 	oDiv.style.background='pink';
+			// }
+		</script>
+	</head>
+	<body>
+		<!-- <input type="button" name="" value="变宽" onclick="toWidth()">
+		<input type="button" name="" value="变高" onclick="toHeight()">
+		<input type="button" name="" value="变粉" onclick="toPink()"> -->
+		<input type="button" name="" value="变宽" onclick="setStyle('width','400px')">
+		<input type="button" name="" value="变高" onclick="setStyle('height','400px')">
+		<input type="button" name="" value="变粉" onclick="setStyle('background','pink')">
+
+		<div id="div1">
+			
+		</div>
+
+	</body>
+</html>

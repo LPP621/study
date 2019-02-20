@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#div1 {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			
+		}
+	</style>
+	<script type="text/javascript">
+		// 鼠标放上去变成绿色
+		function toGreen()           
+		{
+			// 变量
+			// 给 document.getElementById('div1') 取个别名
+			var oDiv=document.getElementById('div1');
+			oDiv.style.width='300px';
+			oDiv.style.height='300px';
+			oDiv.style.background='green';
+
+		}
+		// 鼠标移开变成蓝色
+		function toBlue()
+		{
+			var oDiv=document.getElementById('div1');
+			oDiv.style.width='200px';
+			oDiv.style.height='200px';
+			oDiv.style.background='blue';
+		}
+	</script>
+
+</head>
+<body>
+	<div id="div1" onmouseover="toGreen()" onmouseout="toBlue()"></div>      <!--  调用 -->
+	<p>
+		函数的基本形式：    <br>
+		function 函数名() <br>
+		{ 				 <br>
+			代码          <br>
+		}                <br>
+		调用
+	</p>
+</body>
+</html>

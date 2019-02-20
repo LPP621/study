@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oTxt=document.getElementById('txt1');
+
+			oTxt.onkeydown=function(ev)
+			{
+				var oEvent=ev||event;
+
+				// alert(oEvent.keyCode);
+				// 0 - 48
+				// 9 - 57
+
+				// 可以按退格，可以按左右键和数字
+
+				if(oEvent.keyCode!=8 && oEvent.keyCode<37 && oEvent.keyCode>40 && oEvent.keyCode<48 || oEvent.keyCode>57)
+				{
+					return false;
+				}
+
+				
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="txt1" type="text" name="">
+
+</body>
+</html>

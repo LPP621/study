@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		 window.onload=function()
+		 {
+		 	var oUl1=document.getElementById('ul1');
+		 	var oUl2=document.getElementById('ul2');
+		 	var oBtn=document.getElementById('btn1');
+
+		 	oBtn.onclick=function()
+		 	{
+		 		var oLi=oUl1.children[0];    // 取出来 ul1 中的 li 中的第一个元素
+
+		 		oUl1.removeChild(oLi);       // 将取出的第一个元素从 Ul1 （旧的父级）中移除
+		 		oUl2.appendChild(oLi);		 //将移除的第一个元素添加到 ul2 （新的父级）中
+
+		 		// appendChild：先把元素从原有的父级上删除掉，然后再将删除的元素添加到新的父级上所以去掉 oUl1.removeChild(oLi)； 程序也会正常工作
+		 	}
+		 }
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<input id="btn1" type="button" name="" value="移动">
+	<ul id="ul2">
+		
+	</ul>
+	
+</body>
+</html>

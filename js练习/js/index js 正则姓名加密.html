@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>姓名加密，保留姓，名用*号代替</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr=[
+        '李李李',
+        '李李',
+        '李'
+    ];
+    var reg = /(?<=.)./g;
+    arr = arr.map(function (item) {
+        return item.replace(reg, '*');
+    });
+    console.log(arr);
+</script>
+</html>

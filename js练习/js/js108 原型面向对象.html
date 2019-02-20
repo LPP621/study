@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function creatPerson(name,qq)     // 构造函数
+		{
+			// 在构造函数里面加属性，
+			this.name=name;
+			this.qq=qq;
+		}
+
+		// 在原型里面加方法
+		creatPerson.prototype.showName = function()
+		{
+			alert('我的名字叫：'+this.name);			
+		};
+		creatPerson.prototype.showQQ = function()
+		{
+			alert('我的QQ号：'+this.qq);			
+		};
+
+		var obj1=new creatPerson('李四','2002552365');     // creatPerson是类
+
+		var obj2=new creatPerson('张三','568726412');
+
+		obj1.showName();
+		obj1.showQQ();
+
+		obj2.showName();
+		obj2.showQQ();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

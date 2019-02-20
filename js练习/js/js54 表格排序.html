@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+
+			var oTab=document.getElementById('tab1');
+			var oBtn=document.getElementById('btn1');
+
+			oBtn.onclick=function()
+			{
+				// 将要排序的内容装到数组里
+				var arr=[];
+				for(var i=0;i<oTab.tBodies[0].rows.length;i++)
+				{
+					arr[i]=oTab.tBodies[0].rows[i];
+
+				}
+				arr.sort(function(tr1,tr2)
+				{
+					var n1=parseInt(tr1.cells[0].innerHTML);
+					var n2=parseInt(tr2.cells[0].innerHTML);
+					return n1-n2;
+
+				});
+				for(var i=0;i<arr.length;i++)
+				{
+					oTab.tBodies[0].appendChild(arr[i]);
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	
+	<input id="btn1" type="button" name="" value="排序">
+	<table id="tab1" border="1" width="500px">
+		<thead>
+			<td>序号</td>
+			<td>姓名</td>
+			<td>年龄</td>
+		</thead>
+		<tbody>
+		
+		<tr>
+			<td>2</td>
+			<td>Jack</td>
+			<td>25</td>
+		</tr>
+		
+		<tr>
+			<td>1</td>
+			<td>Mary</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Lili</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Casy</td>
+			<td>29</td>
+		</tr>
+		</tbody>
+	</table>
+</body>
+</html>

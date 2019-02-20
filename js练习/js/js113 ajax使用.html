@@ -1,0 +1,43 @@
+#ajax使用例子2 传递页面数据给后台
+    <!-- 输出结果：<QueryDict: {'hostname': ['22'], 'ip': ['11'], 'group_id': ['1']}> -->
+
+     <form action="/host" method="post">
+        <div class="group">
+            <input type="text" name="hostname" id="hostname" placeholder="请输入主机名">
+        </div>
+        <div class="group">
+            <input type="text" name="ip" id="ip" placeholder="请输入主机IP">
+        </div>
+        <div class="group">
+            <input type="text" name="port" id="port" placeholder="请输入主机端口">
+        </div>
+        <div class="group">
+            <select name="group_id" id="group_id">
+                {% for group in v4 %}
+                    <option value="{{ group.id }}">{{ group.caption }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="group">
+            <input type="submit" value="提交">
+            <input type="button" value="取消">
+            <a id="ajax_submit" style="cursor: pointer">悄悄的提交</a>
+        </div>
+    </form>
+
+<script type="text/javascript">
+        $("#ajax_submit").click(function() {
+            $.ajax({
+                url: "/test_ajax",
+                type: "POST",
+                data: {"hostname":$("#hostname").val(),"ip":$("#ip").val(),"port":$("#port").val(),"group_id":$("#group_id").val()},
+                success: function (data1) {
+                    alert(data1);
+                }
+            })
+    })   
+    def ajax_submit(request):
+    if request.method=="POST":
+        print(request.POST)
+        return HttpResponse("home")
+</script>

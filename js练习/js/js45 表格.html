@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		 window.onload=function()
+		 {
+		 	var oTab=document.getElementById('tab1');
+
+		 	// alert(oTab.getElementsByTagName('tbody')[0].getElementsByTagName('tr')[1].getElementsByTagName('td')[1].innerHTML);
+
+		 	// 上面代码与下等价
+		 	alert(oTab.tBodies[0].rows[1].cells[1].innerHTML);      // 获取表格的 body 里面的第2行第2列的格子的内容
+		 }
+	</script>
+</head>
+<body>
+	<table id="tab1" border="1" width="500px">
+		<thead>
+			<td>序号</td>
+			<td>姓名</td>
+			<td>年龄</td>
+		</thead>
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td>Mary</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Jack</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Lili</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Casy</td>
+			<td>29</td>
+		</tr>
+		</tbody>
+	</table>
+</body>
+</html>

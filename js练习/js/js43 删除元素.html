@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var aA=document.getElementsByTagName('a');
+			var oUl=document.getElementById('ul1');
+
+			for(var i=0;i<aA.length;i++)
+			{
+				aA[i].onclick=function()
+				{
+					oUl.removeChild(this.parentNode);     // 删除当前点击的父节点下面的节点
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<ul id="ul1">
+	<li>adhfgah  <a href="javascript:;">删除</a></li>
+	<li>sfsfwdf  <a href="javascript:;">删除</a></li>
+	<li>23435435 <a href="javascript:;">删除</a></li>
+	<li>uikhjmhm <a href="javascript:;">删除</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oBtn=document.getElementById('btn1');
+
+			if(oBtn.attachEvent)         //如果 attachEvent 通过，则证明运行在IE下
+			{
+				oBtn.attachEvent('onclick',function()
+				{
+					alert('a');
+				});
+				oBtn.attachEvent('onclick',function()
+				{
+					alert('b');
+				});
+			}
+			else                      
+			{
+				oBtn.addEventListener('click',function()
+				{
+					alert('a');
+				},false);
+				
+				oBtn.addEventListener('click',function()
+				{
+					alert('b');
+				},false);
+			}
+
+			// 此时只会弹出 b 
+			// oBtn.onclick=function()
+			// {
+			// 	alert('a');
+			// }
+			// oBtn.onclick=function()
+			// {
+			// 	alert('b');
+			// }
+
+			//attachEvent(事件名，函数)
+			// 适合低版本的 IE 浏览器
+
+			// oBtn.attachEvent('onclick',function()
+			// {
+			// 	alert('a');
+			// });
+			// oBtn.attachEvent('onclick',function()
+			// {
+			// 	alert('b');
+			// });
+
+			// addEventListener(事件名，函数，false)
+
+			// oBtn.addEventListener('click',function()
+			// {
+			// 	alert('a');
+			// },false);
+			// oBtn.addEventListener('click',function()
+			// {
+			// 	alert('b');
+			// },false);
+		}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" name="" value="按钮">
+</body>
+</html>

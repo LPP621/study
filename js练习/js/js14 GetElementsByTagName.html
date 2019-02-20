@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			float: left;
+			border:1px solid blue;
+			margin: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function () 
+		{
+			var aDiv=document.getElementsByTagName('div');
+			for (var i = 0; i < aDiv.length; i++)        // i 自动跟着 div 的数量（长度）变化而变化
+			{
+				aDiv[i].style.background='red';
+			}
+		};
+		</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+
+</body>
+</html>

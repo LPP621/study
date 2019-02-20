@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				width: 50px;
+				height: 300px;
+				background: pink;
+				display: none;
+			}
+		</style>
+    </head>
+	<body>
+		<input type="button" id="btn01" name="" value="显示/隐藏" onclick="showHide()">
+		<div id="div1"></div>
+		<p>
+			if 判断的格式  <br>
+			if(条件成立)  <br>
+			{			<br>
+				语句1    <br>   
+			}			<br>
+			else		<br>
+			{			<br>
+				语句2	<br>
+			}			<br>
+
+		</p>
+
+	</body>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		/*
+        function showHide()
+        {
+            var oDiv=document.getElementById('div1');
+
+            if (oDiv.style.display=='block')
+            {
+                oDiv.style.display='none';
+            }
+            else
+            {
+                oDiv.style.display='block';
+            }
+        }
+        */
+		/* 如果用 jquery 方法的话
+		 *    一、要引用 jquery 库
+		 *    二、要取消 onclick 事件，否则会报错
+		 */
+        $(document).ready(function () {
+			$('#btn01').click(function () {
+                $('#div1').toggle();
+            })
+        })
+	</script>
+</html>

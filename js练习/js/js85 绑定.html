@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oBtn=document.getElementById('btn1');
+
+
+			// 此时只会弹出 b 
+			// oBtn.onclick=function()
+			// {
+			// 	alert('a');
+			// }
+			// oBtn.onclick=function()
+			// {
+			// 	alert('b');
+			// }
+
+			// attachEvent(事件名，函数) ：绑定事件处理函数
+			// detachEvent(事件名，函数) ：解除绑定
+
+			// 适合 IE 浏览器
+
+			// oBtn.attachEvent('onclick',function()
+			// {
+			// 	alert('a');
+			// });
+			// oBtn.attachEvent('onclick',function()
+			// {
+			// 	alert('b');
+			// });
+
+			// DOM 方式
+			// addEventListener(事件名，函数，false)
+			// removeEventListener(事件名，函数，false)：解除绑定
+
+			oBtn.addEventListener('click',function()
+			{
+				alert('a');
+			},false);
+			oBtn.addEventListener('click',function()
+			{
+				alert('b');
+			},false);
+		}
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" name="" value="按钮">
+</body>
+</html>

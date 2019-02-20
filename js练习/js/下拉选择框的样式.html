@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉选择框的样式</title>
+    <style type="text/css">
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        /* 下拉框包含层 */
+        #selectedItem{
+            width: 240px;
+            cursor: pointer;
+        }
+        /* 已选中的选项 */
+        #promptText{
+            position: relative;
+            padding-left: 10px;
+            width: 230px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            background: #fff;
+            color: #999;
+            font-size: 14px;
+        }
+        /* 图标 */
+        #arrows{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+        #arrows:focus{
+            outline: none;
+        }
+        /* 下拉可选项包含层 */
+        .choiceDescription{
+            position: absolute;
+            display: none;
+            /*overflow: hidden;*/
+            margin-top: 2px;
+            width: 240px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+            background: #fff;
+        }
+        .show{
+            display: block;
+        }
+        /* 下拉可选项 */
+        .item{
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            font-size: 15px;
+            color: #666;
+        }
+        .item:hover{
+            color: #fff;
+            background: rgba(49, 255, 195, 0.67);
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div class="root">
+        <div id="selectedItem">
+            <div id="promptText"><span id="spanText">请选择你喜欢的文字</span><img src="../images/arrowup.png" id="arrows" /></div>
+            <ul class="choiceDescription">
+                <li class="item">万水千山，陪你一起看</li>
+                <li class="item">万水千山，陪你一起看1</li>
+                <li class="item">万水千山，陪你一起看2</li>
+                <li class="item">万水千山，陪你一起看3</li>
+                <li class="item">万水千山，陪你一起看4</li>
+            </ul>
+        </div>
+    </div>
+</form>
+</body>
+<script type="text/javascript">
+    (function() {
+        let choiceDescription = document.getElementsByClassName('choiceDescription')[0];
+        let arrows = document.getElementById('arrows');
+        /* 用于判断是否是下拉 */
+        let isDown = false;
+
+        let selectedItem = document.getElementById('selectedItem');
+        /* 对点击下拉进行监听 */
+        selectedItem.addEventListener('click', function() {
+            isDown = !isDown;
+            if(isDown) {
+                /* 如果是下拉状态，则显示下拉的选项，并把图标显示为向下的图标 */
+                choiceDescription.className += ' show';
+                arrows.src = '../images/arrowdown.png';
+            } else {
+                choiceDescription.className = 'choiceDescription';
+                arrows.src = '../images/arrowup.png';
+            }
+        });
+
+        choiceDescription.addEventListener('click', function(e) {
+            let promptText = document.getElementById('spanText');
+            let selectElement = e.target;
+
+            /* 判断是否点击的是li标签，防止点击了li标签以外的空白位置 */
+            while(selectElement.tagName !== 'LI') {
+
+                /* 如果点中的是当前容器层 */
+                if(selectElement == choiceDescription) {
+                    selectElement = null;
+                    break;
+                }
+
+                /* 若果不是，则再找父级容器 */
+                selectElement = selectElement.parentNode;
+            }
+
+            /* innerText、innerHTML、value
+            * innerText 是指html标签里的文字信息，单纯的文本，不会有html标签，存在兼容性
+            * innerHTML 是指包含在html标签里的所有子元素，包括空格、html标签
+            * value 表单里的元素属性值
+            * */
+            if(selectElement) {
+                promptText.innerHTML = e.target.innerHTML;
+            }
+        });
+    })()
+</script>
+</html>

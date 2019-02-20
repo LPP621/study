@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function toDou(n)        // 以防时间中出现0的情况
+		{
+			if(n<10)
+			{
+				return '0'+n;
+			}
+			else
+			{
+				return ''+n;
+			}
+		}
+
+		window.onload=function()
+		{
+			var aImg=document.getElementsByTagName('img');
+			function tick(){                     // tick 可以解决点进去的时候延迟出现六个 0 的问题
+				var oDate=new Date();
+				var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds()); //date 获取时分秒
+				for(var i=0;i<aImg.length;i++)
+				{
+					aImg[i].src='img/'+str.charAt(i)+'.png';         //charAt 可以解决浏览器不兼容的问题
+				}
+			}
+			setInterval(tick,1000);
+			tick();
+		};
+	</script>
+</head>
+<body style="background: black;color: white;font-size: 50px;">
+	<!-- 由于本地没有图片，所以假装有图片，仅仅用来练习 -->
+	<img src="img/0.png">
+	<img src="img/0.png">
+	<img src="img/0.png">
+	<img src="img/0.png">
+	<img src="img/0.png">
+	<img src="img/0.png">
+	<img src="img/0.png">
+
+</body>
+</html>

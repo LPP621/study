@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function ()
+			{
+
+				var oBtn1=document.getElementById('btn1');
+				var oBtn2=document.getElementById('btn2');
+				var oBtn3=document.getElementById('btn3');
+
+				var oDiv=document.getElementById('div1');
+				var oCh=oDiv.getElementsByTagName('input');  
+				//getElementsByTagName   前面不仅仅可以是document，此时表示定义 div 里面的 input，就避免了选区到全选按钮
+				oBtn1.onclick=function ()
+				{
+					// oCh[0].checked=true;;
+					for (var i = 0; i < oCh.length; i++) 
+					{
+						oCh[i].checked=true;
+					}
+				};
+				oBtn2.onclick=function ()
+				{
+					// oCh[0].checked=true;;
+					for (var i = 0; i < oCh.length; i++) 
+					{
+						oCh[i].checked=false;
+					}
+				};
+				oBtn3.onclick=function ()
+				{
+					// oCh[0].checked=true;;
+					for (var i = 0; i < oCh.length; i++) 
+					{
+						if (oCh[i].checked==true) 
+						{
+							oCh[i].checked=false;
+						}
+						else
+						{
+							oCh[i].checked=true;
+						}
+					}
+				};
+
+			};
+		</script>
+	</head>
+	<body>
+		<input id="btn1" type="button" name="" value="全选"> 
+		<input id="btn2" type="button" name="" value="不选"> 
+		<input id="btn3" type="button" name="" value="反选"> 
+		<div id="div1">
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+			<input type="checkbox" name="">	<br>
+		</div>
+		
+
+	</body>
+</html>

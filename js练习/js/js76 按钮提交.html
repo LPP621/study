@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oTxt1=document.getElementById('txt1');
+			var oBtn=document.getElementById('btn1');
+			var oTxt2=document.getElementById('txt2');
+
+			oBtn.onclick=function()
+			{
+				oTxt2.value+=oTxt1.value+'\n';
+				oTxt1.value='';
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="txt1" type="text" name="">
+	<input id="btn1" type="button" name="" value="提交"> <br><br><br>
+	<textarea id="txt2"></textarea>
+
+</body>
+</html>

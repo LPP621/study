@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>只能输入正整数的文本框</title>
+</head>
+<body>
+<input id="int" type="text" value="">
+<a id="btn01" onclick="submit()">提交</a>
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    window.submit = function() {
+        var value = $("#int").val();
+        if (value.length == 0) {
+            alert("请输入数");
+            return false;
+        }
+        if (value < 0 || parseInt(value) != value) {
+            alert("请输入正整数");
+            return false;
+        }
+    }
+    // $(document).ready(function () {
+    //     $("#btn01").click(function () {
+    //         var value = $("#int").val;
+    //         if (value<0||parseInt(value)!=value){
+    //             alert("请输入正整数");
+    //         }
+    //     })
+    // })
+</script>
+</html>

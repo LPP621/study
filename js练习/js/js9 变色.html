@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+			}
+		</style>
+		<script type="text/javascript">
+			function setColor(color)
+			{
+				var oDiv=document.getElementById('div1');
+				oDiv.style.background=color;                    // 颜色定不下来，所以此时可以把颜色当成一个参数传进来
+			}
+			// function toYellow() {
+			// 	// body...
+			// 	var oDiv=document.getElementById('div1');     //首先获取 oDiv
+			// 	oDiv.style.background='yellow';               //改变颜色
+			// }
+			// function toRed() {
+			// 	// body...
+			// 	var oDiv=document.getElementById('div1');
+			// 	oDiv.style.background='red';                
+			// }
+			// function toBlack() {
+			// 	// body...
+			// 	var oDiv=document.getElementById('div1');
+			// 	oDiv.style.background='black'; 
+			// }
+		</script>
+	</head>
+	<body>
+		<!-- <input type="button" name="" value="变黄" onclick="toYellow()">
+		<input type="button" name="" value="变红" onclick="toRed()">
+		<input type="button" name="" value="变黑" onclick="toBlack()"> -->
+
+		<!-- 调用 （更简单）（传参）-->
+		<input type="button" name="" value="变黄" onclick="setColor('yellow')">       
+		<input type="button" name="" value="变红" onclick="setColor('red')">
+		<input type="button" name="" value="变黑" onclick="setColor('black')">
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>

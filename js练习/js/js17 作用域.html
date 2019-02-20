@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var a;                //全局变量，在任何地方都能用
+		function aaa() {
+			a = 12;          // 局部变量，只在函数内使用，但是在google里依旧能弹出来12
+		}
+		function bbb() {
+			alert(a);
+		}
+		aaa();          // 12
+		bbb();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

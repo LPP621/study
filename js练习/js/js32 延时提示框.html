@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	div {float: left;margin: 10px;}
+		#div1 {width: 50px;height: 50px;background: red;}
+		#div2 {width: 260px;height: 260px;background: #ccc; display: none;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oDiv1=document.getElementById('div1');
+			var oDiv2=document.getElementById('div2');
+			var timer=null;
+			oDiv2.onmouseover=oDiv1.onmouseover=function()  // odiv2 鼠标移入的效果和 odiv1 的效果代码一样，所以可以连接合并
+			{
+				clearTimeout(timer);
+				oDiv2.style.display='block';
+			}
+			
+			oDiv2.onmouseout=oDiv1.onmouseout=function()  // odiv2 鼠标移出的效果和 odiv1 的效果代码一样，所以可以连接合并
+			{
+				timer=setTimeout(function()           // 加个定时器，当鼠标移开 div1 之后的500ms之后div2再消失
+					{
+					    oDiv2.style.display='none';	
+					},500);
+				
+			}
+			// oDiv2.onmouseover=function()        // 当鼠标移到 div2 的时候定时器消失不起作用
+			// {
+			// 	clearTimeout(timer);
+			// }
+
+			// oDiv2.onmouseout=function()        // 当鼠标移到 div2 的时候定时器消失不起作用
+			// {
+			// 	timer=setTimeout(function()           // 加个定时器，当鼠标移开 div1 之后的500ms之后div2再消失
+			// 		{
+			// 			oDiv2.style.display='none';
+			// 		},500);
+			// }
+		}
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+
+</body>
+</html>

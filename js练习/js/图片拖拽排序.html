@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片拖拽排序</title>
+</head>
+<body>
+<form action="#" method="post" class="layui-form pop-up-style" id="images" hidden lay-filter="status" >
+    <ul id="test-upload-normal5" class="test-upload-normal5 del" >
+        <li id="model"><img src="../img/01.jpg" id="test-upload-normal4"></li>
+    </ul>
+</form>
+</body>
+<script type="text/javascript ">
+    var arr = new Array();
+    var img = new Array();
+    var imgs = new Array();
+    //图片拖拽排序
+    Sortable.create(document.getElementById("test-upload-normal5"), {
+        animation: 150,
+        onUpdate: function (evt) {
+            img = swapArray(img,evt.oldIndex,evt.newIndex);
+            imgs = swapArray(imgs,evt.oldIndex,evt.newIndex);
+        }
+    });
+    //排序
+    function swapArray(arr, index1, index2) {
+        arr[index1] = arr.splice(index2, 1, arr[index1])[0];
+        return arr;
+    }
+</script>
+</html>

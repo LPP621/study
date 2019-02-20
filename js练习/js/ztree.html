@@ -1,0 +1,62 @@
+
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<link href="http://cdn.bootcss.com/zTree.v3/3.5.23/css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+<script src="http://cdn.bootcss.com/zTree.v3/3.5.23/js/jquery.ztree.all.js"></script>
+<script type="text/javascript">
+    var setting = {
+        //显示复选框
+        check: {
+            enable: true
+        },
+    };
+    var zNodes =[
+        { name:"", open:true,
+            children: [
+                { name:"",
+                    children: [
+                        { name:""},
+                        { name:""},
+                        { name:""},
+                        { name:""}
+                    ]},
+                { name:"",
+                    children: [
+                        { name:""},
+                        { name:""},
+                        { name:""},
+                        { name:""}
+                    ]},
+                { name:"父节点13 - 没有子节点", isParent:true}
+            ]},
+        { name:"父节点2 - 折叠",
+            children: [
+                { name:"父节点21 - 展开展开展开展开", open:true, checked:true,
+                    children: [
+                        { name:"叶子节点211"},
+                        { name:"叶子节点212"},
+                        { name:"叶子节点213"},
+                        { name:"叶子节点214"}
+                    ]},
+                { name:"父节点22 - 折叠",
+                    children: [
+                        { name:"叶子节点221"},
+                        { name:"叶子节点222"},
+                        { name:"叶子节点223"},
+                        { name:"叶子节点224"}
+                    ]},
+                { name:"父节点23 - 折叠",
+                    children: [
+                        { name:"叶子节点231"},
+                        { name:"叶子节点232"},
+                        { name:"叶子节点233"},
+                        { name:"叶子节点234"}
+                    ]}
+            ]},
+        { name:"父节点3 - 没有子节点", isParent:true}
+    ];
+
+    $(function(){
+        $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+    });
+</script>
+<ul id="treeDemo" class="ztree"></ul>

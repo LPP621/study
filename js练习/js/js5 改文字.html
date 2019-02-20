@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body>
+	<input id="txt1" type="text" name="" value="Hello Jquery">
+	<input type="button" id="btn01" name="" value="改文字" onclick="setText()">
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // function setText() {
+    //     // body...
+    //     var oTxt=document.getElementById('txt1');
+    //     oTxt.value='adjguywedbsjh';
+    // }
+    $(document).ready(function () {
+        $("#btn01").click(function () {
+            $("#txt1").val("HelloWorld!");
+        })
+    })
+</script>
+</html>

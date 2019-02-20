@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function(){
+			var oUl=document.getElementById('ul1');
+
+			// IE6-8
+			// oUl.firstChild.style.background='red';
+
+			// 高级浏览器
+			// oUl.firstElementChild.style.background='red';
+
+			//兼容
+			if(oUl.firstElementChild)         //如果 firstElementChild 存在
+			{
+				oUl.firstElementChild.style.background='red';
+			}
+			else
+			{
+				oUl.firstChild.style.background='red';
+			}
+
+
+		}
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+</html>

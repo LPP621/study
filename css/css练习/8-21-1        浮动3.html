@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>浮动3</title>
+		<style type="text/css">
+			div:first-child {
+				width: 300px;
+				height: 300px;
+				background-color: pink;
+				float: left;    /*left 为默认值*/
+				/*给某个盒子添加浮动之后，就脱离标准流了飘在标准流的上面，压住标准流，就漂浮起来了，就相当于飞机飘在云层上空中*/
+			}
+			div:last-child {
+				width: 200px;
+				height: 500px;
+				background-color: skyblue;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<!-- 如果两个盒子都不加浮动，就是标准流：块级元素自上而下显示 -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>属性选择器</title>
+	<style type="text/css">
+		a[title] {                    /*属性选择器用[]来表示*/
+			color: red;
+		}
+		input[type=text] {            /*属性值type=text*/
+			color: skyblue;
+		}
+		/*   ^= 表示类名以font开头就能运用，不用写全名*/
+		div[class^=font] {
+			color: pink;
+		}
+
+		/*   $= 表示类名以footer结尾就能运用，不用写全名*/
+		div[class$=footer] {
+			color: green;
+		}
+
+		/*   在任意位置, *= 表示 tao 在任意位置都可以  */
+		div[class*=tao] {
+			color: #ff00bb;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="#" title="我是一个百度">百度</a>          <!--  鼠标放上去会显示“我是一个百度/新浪”这句话 -->
+	<a href="#" title="我是一个新浪">新浪</a>
+	<a href="#">搜狐</a>
+	<a href="#">网易</a>
+	<a href="#">土豆</a>
+	<input type="text" value="文本框">
+	<input type="text" value="文本框">
+	<input type="text" value="文本框">
+	<input type="submit">
+	<input type="submit">
+	<input type="reset">
+	<input type="reset">
+
+	<div class="font12">属性选择器</div>
+	<div class="font12">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="sub-footer">属性选择器footer</div>
+	<div class="jd-footer">属性选择器footer</div>
+	<div class="news-tao-nav">属性选择器</div>
+	<div class="news-tao-header">属性选择器</div>
+	<div class="tao-header">属性选择器</div>
+</body>
+</html>

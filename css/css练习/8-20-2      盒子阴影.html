@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>盒子阴影</title>
+	<style type="text/css">
+		h1 {
+			font-size: 80px;
+			/*text-shadow:  水平距离 垂直距离 模糊距离 阴影颜色；*/
+			text-shadow: 7px 0px 3px rgba(0,0,0,0.3)
+		}
+		div {
+			width: 200px;
+			height: 200px;
+			border: 10px solid red;
+			/*box-shadow: 水平阴影 垂直阴影 （前两个必须）   模糊距离    阴影尺寸(影子大小)    阴影颜色    内/外阴影（默认外阴影outset 但是不能写出来，想要内阴影则为 inset）。（后面四个可选）*/
+			box-shadow: 5px 5px 3px 9px rgba(0, 0, 0, 0.4) inset;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		稳住，我们能赢
+	</h1>
+	<div>
+		
+	</div>
+</body>
+</html>

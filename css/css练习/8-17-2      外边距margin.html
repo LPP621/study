@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>外边距</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			/*margin-top: 100px; */       /*盒子距离上面100px*/
+			/*margin-left: 50px;*/
+			/*margin: 10px 20px 30px;      上10、左右20 、下30*/
+			margin: 30px auto;			/*盒子距离上下各30px       左右 auto 自动  这样可以块级带有宽度的盒子水平居中对齐*/
+			padding: 4px;
+		}
+
+		header {
+			width: 900px;
+			height: 100px;
+			background-color: gray;
+			margin: 0 auto;			/* 左右一定 是 auto 就可以居中*/
+			text-align: center;
+			line-height: 100px;			/*行高等于高度可以文字垂直居中*/
+		}
+		
+
+		section img {			/*插入图片更改大小用 width 和 height*/
+			width: 200px;
+			height: 200px;
+			margin-top: 30px;     /*插入图片更改位置 可以用 margin 和padding 盒模型 ，就像一个盒子*/
+			margin-left: 30px;	/* 图片和上部文字的距离 30 像素*/
+		}
+
+		aside {
+			width: 400px;
+			height: 400px;
+			border: 1px solid purple;
+			background: #fff url(../css/images/1111.jpg) no-repeat;
+			background-size: 200px 210px;   /* 背景图片更改大小只能用 background-size: */
+			background-position: 30px 50px;    /*背景图片更改位置只能用 background-position: */ 
+		}
+
+	</style>
+</head>
+<body>
+	<header>头部标签</header>
+	<div></div>
+
+	1.外边距实现盒子居中，必须满足两个条件：
+	<ul> 
+		<li>必须是块级元素</li>
+		<li>盒子必须指定了宽度（width）</li>
+		然后就给左右的外边距都设置为auto，就可使块级元素水平居中
+	</ul>
+
+	2.文字水平居中和盒子水平居中
+	<p>
+		文字水平居中：text-align：center；<br /> <br />
+
+		 盒子水平居中: margin: 10px auto;   左右margin改为auto就可以了
+
+	</p>
+
+	3.插入图片和背景图片区别
+	<p>
+		1.一般情况下背景图片适合做一些小图标 <br /><br />
+		2.产品展示之类用插入图片   <br />
+	</p>
+	1.插入图片
+	<section>
+		<img src="../css/images/1111.jpg" height="100" width="100" alt="">
+	</section>
+	2.背景图片
+	<aside>
+		
+	</aside>
+
+</body>
+</html>

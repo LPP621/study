@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>padding不影响盒子大小的情况</title>
+		<style type="text/css">
+			
+			div {
+				height: 30px;
+				border: 1px solid red;
+				padding-left: 20px;
+			}
+			nav {
+				width: 300px;
+				height: 40px;
+				border: 1px solid pink;
+			}
+			p {
+				height: 20px;
+				background-color: skyblue;
+				padding-left: 30px;          /*p没有指定宽度，所以会继承父元素的宽度，块级元素   此时增加 padding 不会影响盒子宽度*/
+			}
+		</style>
+	</head>
+	<body>
+		1.没有指定盒子的宽度，则 padding-left 不会影响盒子宽度，否则指定任何宽度值都会影响。
+		<div>大大大小小小</div>
+
+		<br />
+		2.p没有指定宽度，所以会继承父元素的属性<br /><br />
+
+		<nav>
+			<p>dadadaxiaoxiaoxiao</p>
+		</nav>
+	</body>
+</html>

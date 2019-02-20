@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS优先级第3题</title>
+	<style type="text/css">
+
+		div p {                   /*权重为0，0，0，2*/
+			color: red;
+		}
+
+		#father {                 /* ID选择器权重为0，1，0，0，但是这是继承性，所以最后权重为0*/
+			color: red;
+		}
+
+		p.c2 {                    /*权重为 0，0，0，1 + 0，0，1，0 = 0，0，1，1*/
+			color: blue;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="father" class="c1">
+		<p class="c2">
+	       请问这行字体什么颜色？     蓝色 </p>
+	</div>
+</body>
+</html>

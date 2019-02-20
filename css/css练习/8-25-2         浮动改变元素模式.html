@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>浮动影响盒子显示模式</title>
+		<style type="text/css">
+			div	{
+				height: 200px;
+				background-color: pink;
+				float: left;        /*块级元素添加浮动之后，具有行内块元素的特性，宽度会随着文字的多少被自动撑开*/
+			}
+			span {
+				background-color: skyblue;    /*由于div 具有行内块元素的特性，所以 span 标签会自动在 div 盒子的右方排列*/
+				height: 100px;       /*由于行内块元素没有高度所以加一个高度是不起作用的*/
+				float: left;         /*行内元素添加浮动之后，具有行内块的特性*/ 
+				/*行内块的特性：可以一行放多个 ，有宽度和高度，盒子的大小是由内容决定的*/
+			}
+		</style>
+	</head>
+	<body>
+		<div>三傻大闹宝莱坞</div>
+		<div>三傻大闹宝莱坞</div>
+		<span>额滴个神呐</span>
+		<span>额滴个神呐</span>
+
+
+	</body>
+</html>

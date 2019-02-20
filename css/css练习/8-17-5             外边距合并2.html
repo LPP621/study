@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>外边距合并2</title>
+		<style type="text/css">
+
+
+			.father {
+				width: 400px;
+				height: 400px;
+				background-color: pink;
+				margin-top: 70px;
+				margin-left: 20px;
+				/*border: 1px solid red;        *//*解决外边距合并（塌陷）问题*/
+				/*padding: 1px;  解决外边距合并（塌陷）问题，此时父元素和子元素的上外边距无关联*/
+				overflow: hidden;
+			}
+
+			.son {
+				width: 200px;
+				height: 200px;
+				background-color: skyblue;
+				margin-top: 30px;
+				margin-left: 40px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="father">
+			<div class="son"></div>
+		</div>
+		<p>
+			对于两个嵌套关系的块元素，如果父元素没有上内边距及边框，则父元素的上外边距与子元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。<br /><br />
+			如上面两个框，只写margin-top 时 ，最后显示为 70 像素<br />
+			解决方案：<br />
+			1.可以为父元素定义 1 像素的上边框或上内边距。<br />
+			2.可以为父元素添加 overflow : hidden.
+		</p>
+
+	</body>
+</html>

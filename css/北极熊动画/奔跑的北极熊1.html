@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奔跑的北极熊</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background: #464853;
+        }
+        #wrap {
+            width: 100%;
+            height: 975px;
+            position: relative;
+            background: url(images/bg-space.png) repeat-x;
+            animation: bgrun 450s linear infinite;              /* 从开始到结束 以相同的速度（linear），花了450s 完成一个动画，播放无限次（infinite）*/
+        }
+        @keyframes bgrun {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1920px 0;
+            }
+        }
+        @-webkit-keyframes bgrun{        /* Safari and Chrome */
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1920px 0;
+            }
+        }
+        #m1 {
+            width: 100%;
+            height: 10.5em;
+            position: absolute;
+            bottom: 0;
+            z-index: 9;
+            background: url(images/mountain1.png) repeat-x;
+            animation: run1 100s linear infinite,suof 1s linear forwards;       /* forwards： 动画开始之前有个淡入的效果*/
+            -webkit-background-size: auto 100%;     /* 宽度 高度*/
+            background-size: auto 100%;
+        }
+
+        #m2 {
+            width: 100%;
+            height: 13.5em;
+            position: absolute;
+            bottom: 0;
+            z-index: 8;
+            background: url(images/mountain2.png) repeat-x;
+            -webkit-animation: run1 170s linear infinite,suof 1s linear forwards;
+            -o-animation: run1 170s linear infinite,suof 1s linear forwards;
+            animation: run1 170s linear infinite,suof 1s linear forwards;
+            -webkit-background-size: auto 100%;
+            background-size: auto 100%;
+        }
+        #m3 {
+            width: 100%;
+            height: 24.5em;
+            position: absolute;
+            background-size: auto 100%;
+            background: url(images/mountain3.png) repeat-x;
+            z-index: 7;
+            bottom: 0;
+            animation: run1 360s linear infinite,suof 1s linear forwards;
+        }
+        @keyframes run1 {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -3840px 0;
+            }
+        }
+        @keyframes suof{
+            0%{
+                transform: scale(1.5);      /* scale 定义 2D 缩放转换*/
+                opacity: 0;                 /* 透明度 */
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        #x {
+            width: 200px;
+            height: 100px;
+            bottom: 10px;
+            left: -4%;
+            margin-left: -100px;
+            position: absolute;
+            background: url(images/bear.png) no-repeat 0 0;
+            -webkit-animation: eo1 3.6s step-end .6s forwards;
+            -o-animation: eo1 3.6s step-end .6s forwards;
+            animation: eo1 3.6s step-end .6s forwards;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    
+    <div id="m1" class="shan"></div>
+    <div id="m2" class="shan"></div>
+    <div id="m3" class="shan"></div>
+    <div id="x" class="xiong"></div>
+    
+</div>
+</body>
+</html>

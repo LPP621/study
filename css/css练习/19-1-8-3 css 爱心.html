@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            height: 100vh;           /* viewpoint height,视窗高度，1vh = 视窗高度的 1% */
+            display: flex;           /* 弹性盒子 */
+            flex-direction: column;  /* 纵向排列 */
+            align-items: center;     /*元素在该行的侧轴（纵轴）上居中放置*/
+            justify-content: center; /*设置弹性盒子元素在主轴（横轴）方向上的对齐方式。*/
+            background-color: #f3f3f3;
+            overflow: hidden;        /* 清除浮动 */
+        }
+        .hearts {
+            width: 100vm;
+            height: 20vm;
+            /*border: 1px solid;*/
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 5vm;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .heart {
+            width: 15vw;
+            height: 15vw;
+            /*border: 1px solid;   刚开始的时候用来确认心的位置 */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d;
+            animation: rotate 5s ease-in-out infinite;     /* 添加旋转动画 */
+        }
+
+        /* 5 个 heart 的运动的延迟时间*/
+        .heart:nth-of-type(1) {
+            animation-delay:-5s;
+        }
+        .heart:nth-of-type(2) {
+            animation-delay:-4s;
+        }
+        .heart:nth-of-type(3) {
+            animation-delay:-3s;
+        }
+        .heart:nth-of-type(4) {
+            animation-delay:-2s;
+        }
+        .heart:nth-of-type(5) {
+            animation-delay:-1s;
+        }
+        /* keyframes 运动轨迹*/
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg) rotateZ(25deg) translateY(7.5vw);
+            }
+            50% {
+                transform: rotateY(270deg) rotateZ(25deg) translateY(-7.5vw);
+            }
+            100% {
+                transform: rotateY(360deg) rotateZ(25deg) translateY(7.5vw);
+            }
+        }
+        .plane {
+            position: absolute;
+            opacity: 0.8;
+        }
+        .plane-right {
+            transform: rotateY(90deg); /* 因为此处为 90 度垂直, 所以并不可见 */
+        }
+        .half-heart {
+            width: 7.5vw;
+            height: 7.5vw;
+            background-color: pink;
+            transform: rotate(-45deg);
+        }
+
+        /* 将旋转的两个正方形改为心形  生成两个圆形放置在正方形的上方即可（伪元素可解决）*/
+        /*before    和  after 在 half-heart 前面和后面插入文本等*/
+        .half-heart:before,
+        .half-heart:after {
+            content: "";
+            width: 7.5vw;
+            height: 7.5vw;
+            background-color: pink;
+            border-radius: 100%;
+            position: absolute;
+        }
+        .half-heart:before {
+            top: -3.25vw;
+            left: 0;
+        }
+        .half-heart:after {
+            top: 0;
+            left: 3.25vw;
+        }
+
+        footer {
+            margin-top: 10vh;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: "verdana";
+            font-size: 22px;
+            color: #F48FB1;
+        }
+
+    </style>
+</head>
+<body>
+<!--<figure> 标签规定独立的流内容（图像、图表、照片、代码等等）。
+    <figure> 元素的内容应该与主内容相关，同时元素的位置相对于主内容是独立的。如果被删除，则不应对文档流产生影响。-->
+<figure class="hearts">
+    <section class="heart">
+        <div class="plane plane-left">
+            <div class="half-heart"></div>
+        </div>
+        <div class="plane plane-right">
+            <div class="half-heart"></div>
+        </div>
+    </section>
+    <section class="heart">
+        <div class="plane plane-left">
+            <div class="half-heart"></div>
+        </div>
+        <div class="plane plane-right">
+            <div class="half-heart"></div>
+        </div>
+    </section>
+    <section class="heart">
+        <div class="plane plane-left">
+            <div class="half-heart"></div>
+        </div>
+        <div class="plane plane-right">
+            <div class="half-heart"></div>
+        </div>
+    </section>
+    <section class="heart">
+        <div class="plane plane-left">
+            <div class="half-heart"></div>
+        </div>
+        <div class="plane plane-right">
+            <div class="half-heart"></div>
+        </div>
+    </section>
+    <section class="heart">
+        <div class="plane plane-left">
+            <div class="half-heart"></div>
+        </div>
+        <div class="plane plane-right">
+            <div class="half-heart"></div>
+        </div>
+    </section>>
+</figure>
+<footer>pink hearts</footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS优先级第1题</title>
+	<style type="text/css">
+		#father #son{                      /*权重为 0，1，0，0 + 0，1，0，0 = 0，2，0，0*/
+			color: blue;
+		}
+
+		#father p.c2 {                     /*权重为 0，1，0，0 + 0，0，0，1 + 0，0，1，0 = 0，1，1，1*/
+			color: black;
+		}
+
+		div.c1 p.c2 {                      /*权重为 0，0，0，1 + 0，0，1，0 + 0，0，0，1 + 0，0，1，0 = 0，0，2，2*/
+			color: red;
+		}
+
+		#father {
+			color: green !important;      /*继承的权重为0，所以有impotant 也是0 */
+		}
+	</style>
+</head>
+<body>
+	<div id="father" class="c1">
+		<p id="son" class="c2">
+			请问这行字体是什么颜色的?
+			蓝色
+		</p>
+	</div>
+
+</body>
+</html>

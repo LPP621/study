@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>显示模式的转换</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 200px;
+			background-color: pink;
+			display: inline;             /*将块级标签转为行内标签模式*/
+		}
+
+		span {
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			display: block;             /*将行内标签模式转为块标签模式*/
+		}
+		a {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			display: inline-block;             /*将行内标签模式转为块内块标签显示模式*/
+		}
+		
+	</style>
+
+</head>
+<body>
+	<!-- 块级元素 -->
+	<div>123</div>
+	<div>456</div>
+	<div>789</div>
+	<div>109</div>
+	<!-- 行内元素模式 -->
+	<span>abc</span>
+	<span>def</span>
+	<span>ghi</span>
+
+	<a href="#">ddd</a>
+	<a href="#">zzz</a>
+
+</body>
+</html>

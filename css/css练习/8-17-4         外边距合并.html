@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>外边距合并</title>
+		<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+
+		}
+		/*下外边距100px   , 第二个的上外边距50 px但是同时设置时中间的间隔为 100 像素 而不是150 px .*/
+		div:first-child {
+			margin-bottom: 100px;
+
+		}
+
+		div:last-child {
+			background-color: skyblue;
+			margin-top: 50px;
+		}
+
+		p {
+			font-size: 14px;
+			
+		}
+
+		
+			
+
+		</style>
+	</head>
+	<body>
+		<p>当上下相邻的两个块元素相遇时，如果上面的元素有下外边距 margin-bottom ，下面的元素有上外边距 margin-top ，则他们之间的垂直间距不是 margin-bottom 和 margin-top 之和，而是两者中的较大者，这种现象被称为相邻块元素垂直外边距的合并.</p>
+		<div></div>
+		<div></div>
+
+	</body>
+</html>

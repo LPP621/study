@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>盒子的计算尺寸</title>
+		<style type="text/css">
+			
+			div.chicun {
+				background-color: #c0c0c0;
+				height: 156px;
+				width: 800px;
+				padding: 10px 20px;
+			}
+
+			div.hezi {
+				width: 100px;       /*盒子宽度*/
+				height: 100px;
+				background-color: pink;
+				padding: 40px;				/*内边距*/
+				border: 5px solid red;     /*4 个边框，每个 border 边框为5px，*/
+				margin: 10px;               /*外边距*/
+				
+
+				/*总的尺寸 ：下边缘 = 左margin + 左border + 左padding + width + 右padding + 右border + 右margin = 10+5+40+100+40+5+10 = 210*/
+				/*元素实际大小（能看到的）：下边缘 = 左border + 左padding + width + 右padding + 右border = 5+40+100+40+5= 190*/
+			}
+		</style>
+	</head>
+		<body>
+		<h2>content 宽度和高度</h2>
+
+		<p>
+			使用宽度属性 width 和高度属性 height 可以对盒子的大小进行控制。<br /><br />
+			width 和 height 的属性值可以为不同单位的数值或相对于父元素的百分比	%，实际工作中最常用的是像素值。<br /><br />
+			大多数浏览器，如Firefox IE6 及以上版本都采用了 W3C 规范，符合 CSS 规范的盒子模型的总宽度和总高度的计算原则是：<br />
+			<div class="chicun">
+				外盒尺寸计算（元素空间尺寸）<br />
+				Element(元素) 空间高度 = content height + padding +border + margin<br />
+				Element(元素) 空间宽度 = content width + padding +border + margin<br /><br />
+				内盒尺寸计算 （元素实际大小）<br />
+				Element(元素) height = content height + padding +border (height 为内容高度)<br />
+				Element(元素) width = content width + padding +border (width 为内容宽度)<br />
+			</div>
+		</p>
+		例如：<br />
+		<div class="hezi">
+			
+		</div>
+		注意：<br />
+		1.宽度属性 width 和高度属性 height 仅适用于块级元素，对行内元素无效 （img 标签和 input 除外）<br />
+		2.计算盒子模型的总高度时，还应考虑上下两个盒子垂直外边距合并的情况<br />
+		3.如果一个盒子没有给定宽度/高度或者继承父亲的宽度/高度，则 padding 不会影响本盒子大小<br />
+
+	</body>
+</html>

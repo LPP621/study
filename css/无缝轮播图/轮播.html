@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		ul{
+			margin:0;
+			padding: 0;
+			height: 426px;
+			width: 3840px;
+			position: relative;
+		}
+		li{
+			list-style: none;
+			float: left;
+			height: 426px;
+			width: 640px;
+			overflow: hidden;
+			position: relative;
+		}
+		i{
+			position: absolute;
+		}
+		img{
+			width: 100%;
+		}
+		i:hover{
+			color: #999;
+		}
+		#wrap{
+			height: 426px;
+			width: 640px;
+			overflow: hidden;
+			margin: 50px auto;
+			position: relative;
+		}
+		.icon-zuo ,.icon-you{
+			font-size: 26px;
+			top:45%;
+			color: #fff;
+			cursor: pointer;
+		}
+		.icon-zuo {
+			left: 0;
+		}
+		.icon-you{
+			right: 0;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+</head>
+<body>
+	<div id="wrap">
+		<ul id="nav">
+			<li class="list">1<img src="images/1.jpeg"></li>
+			<li class="list">2<img src="images/2.jpeg"></li>
+			<li class="list">3<img src="images/3.jpeg"></li>
+			<li class="list">4<img src="images/4.jpeg"></li>
+			<li class="list">5<img src="images/5.jpeg"></li>
+			<li class="list">1<img src="images/1.jpeg"></li>
+		</ul>
+		<i class="iconfont icon-zuo left"></i>
+		<i class="iconfont icon-you right"></i>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//设置定时器的运动
+			var fn=function(){
+				len++;
+				Run();
+			}
+			var p=setInterval(fn,2000);//定时器的运行时间
+			function Run2(){//封装
+				clearInterval(p);//清除定时器
+				p=setInterval(fn,2000);//重置(重启)定时器.
+			}
+			var len=0;
+			$('.right').click(function(){
+				Run2();
+				len++;
+				Run();
+			})
+			$('.left').click(function(){
+				Run2();
+				len--;
+				Run();		
+			})
+			function Run(){
+				var length=$('li').length;
+				if(len>length-1){
+					len=1;
+					$('ul').css({'left':'0px'});
+				}
+				if(len<0){
+					len=length-2;
+					$('ul').css({'left':-(length-1)*640+"px"});
+				}
+				$('ul').stop().animate({
+					left:-len*640+'px'
+				},500);
+			}
+		})
+	</script>
+</body>
+</html>

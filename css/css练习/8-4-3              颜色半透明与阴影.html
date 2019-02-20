@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>颜色半透明</title>
+	<style type="text/css">
+		h1 {
+			/*color: rgb(0,0,0);                                  三个0意思是全黑*/
+			color: rgba(0,0,0,0.5);                              /*a是alpha的意思，取值0-1，，，，4个参数，不能省略*/
+			text-align: center;
+		}
+		h2 {
+			font-size: 100px;
+			text-align: center;
+			text-shadow: 70px 20px 3px rgba(0,0,0,0.4)              /*顺序为水平距离。 垂直距离。模糊距离。阴影颜色（a指的是阴影的透明状态），前面两个参数必须写，后面两个可以省略 */  
+		}
+	</style>
+
+
+</head>
+<body>
+	<h1>文字是可以半透明的</h1>
+	<h2>你是阴影，我是火影</h2>
+
+</body>
+</html>

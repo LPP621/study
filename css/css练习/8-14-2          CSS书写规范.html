@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS书写规范</title>
+	<style type="text/css">
+		* {
+			color: #000000;
+		}
+		.bc {
+			background-color: #c0c0c0;
+			width: 300px;
+			height: 150px;
+			text-align: left;
+			padding: 20px;
+
+		}
+		
+	</style>
+</head>
+<body>
+	<h2>css书写规范</h2>
+	<hr />
+	<h3>空格规范</h3>
+
+	<div><strong>【强制】</strong> 选择器与{}之间必须包含空格。</div>
+	<div>示例：  .selecter {}</div>
+	<div><strong>【强制】</strong> 属性名 与之后的：之间不允许包含空格，：与属性值 之间必须包含空格。</div>
+	<div>示例：  font-size: 12px;</div>
+
+
+	<h3>选择器规范</h3>
+	<hr />
+	<div><strong>【强制】</strong> 当一个rule包含多个selector时，每个选择器声明必须独占一行。</div>
+	<div>示例：</div>
+	<div class="bc">
+		/* good */  <br />
+		.post,    <br />
+		.page,    <br />
+		.comment {      <br />
+		    line-height: 1.5;     <br />
+		}      <br />
+	</div>
+
+
+</body>
+</html>

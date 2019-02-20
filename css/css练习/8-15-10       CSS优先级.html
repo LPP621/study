@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS优先级</title>
+		<style type="text/css">
+
+			/*选择器不一样时，存在优先级，而不是有继承性，所以  div 和 .king  换位置的时候也是显示蓝色，即存在优先级（权重）*/
+
+			div {           /*标签选择器，权重： 0，0，0，1 */
+				color: pink;
+			}
+
+			.king {         /*类选择器， 权重： 0，0，1，0 */
+				color: blue;
+			}
+
+			:first-child { /*伪类选择器， 权重： 0，0，1，0 */
+				color: green;
+			}
+			/*当权重一样时就采取就近原则，即此时显示 绿色 ，当  div 与 :first-child  互换位置时文字显示为 蓝色 */
+
+			#wang {         /*id 选择器, 权重： 0，1，0，0*/
+				color: red;
+			}
+
+			/*权重最大的（不是选择器）*/
+			div {
+				color: orange!important;      /*important 就是最重要的  级别最高   一旦出现优先执行*/
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="king" id="wang" style="color: skyblue">王者荣耀</div>
+		<!-- 内嵌式选择器权重为：1，0，0，0      即文字会显示为 天蓝色（没有！important的前提下） -->
+	</body>
+</html>

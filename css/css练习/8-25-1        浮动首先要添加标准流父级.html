@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>浮动首先要添加标准流父级</title>
+		<style type="text/css">
+			.firstdiv {
+				width: 850px;
+				height: 850px;
+				float: left;
+			}
+			.firstdiv .father {
+				width: 500px;
+				height: 300px;
+				background-color: pink;
+				padding: 10px;
+				border: 20px solid red;
+			}
+			.firstdiv .son {
+				width: 200px;
+				height: 200px;
+				background-color: purple;
+				float: right;             /*子盒子的浮动不会压住父盒子的 padding 和 margin 值的*/
+			}
+			.firstdiv section {
+				width: 800px;
+				height: 500px;
+				background-color: skyblue; 
+			}
+			.firstdiv section .one {
+				width: 200px;
+				height: 200px;
+				background-color: blue; 
+				float: left;
+			}
+			.firstdiv section .two {
+				width: 200px;
+				height: 300px;
+				background-color: pink; 
+				float: left;              /*无论这个元素有没有浮动，只要上一个盒子有浮动,此元素会和上一个元素的顶部对齐*/
+				/*若第一个盒子不浮动，第二个浮动，则第二个盒子顶端和第一个盒子底端对齐*/
+
+			}
+			.seconddiv {
+				width:633px;
+				height: 198px;
+				background-color: #c0c0c029;
+				float: right;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="firstdiv">
+				<p>
+				浮动脱离标准流，不占位置，会影响标准流，浮动只有左右浮动。<br>
+				1.浮动首先创建包含块的概念（包裹）。就是说，浮动的元素总是找离他最近的父元素对齐。但是不会超出内边距 padding 的范围。<br>
+				</p>
+				<div class="father">
+					<div class="son"></div>
+				</div>
+
+				<p>2.浮动的元素排列位置，跟上一个元素（块级）有关系。如果上一个元素有浮动，则A元素顶部会和上一个元素的顶部对齐；如果上一个元素就是标准流，则A元素的顶部会和上一个元素的底部对齐</p><br>
+				<section>
+					<div class="one">1</div>
+					<div class="two">2上一个盒子有浮动<br>,此元素会和上一个元素的顶部对齐</div>
+				</section>
+			</div>
+			<div class="seconddiv">
+				<p>
+					元素添加浮动后，元素会具有行内块元素的特性，元素的大小完全取决于定义的大小或者默认的内容多少<br>
+					总结：    浮动 -->   浮漏特<br>
+					一句话总结浮动： 浮动的目的是为了让多个块级元素在一行内显示。<br>
+					浮：    加了浮动的盒子是漂浮起来的，漂浮在其他标准流的上面。<br>
+					漏：    加了浮动的盒子，不占位置的，它浮起来了，它原来的位置漏给了标准流的盒子。<br>
+					特：    特别注意，这是特殊的使用，有很多的不好之处，使用需要谨慎。<br>
+				</p>				
+			</div>
+		</div>
+	</body>
+</html>

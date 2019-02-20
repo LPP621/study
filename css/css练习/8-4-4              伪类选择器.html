@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>伪类选择器</title>
+		<style type="text/css">
+
+		    /*a是标签选择器   所有的链接*/
+
+		    /*链接伪类选择器*/
+			a:link {                   /*常用：未访问的链接*/
+				font-size: 16px;
+				color: gray;
+				font-weight: 700;
+			}
+			a:visited {                 /*已访问的链接，点过一次之后就变*/
+				font-size: 16px;
+				color: blue;
+				font-weight: 700;
+			}
+			a:hover {                   /*常用：鼠标移到链接上*/
+				font-size: 16px;
+				color: red;
+				font-weight: 700;
+			}
+			a:active {                  /*选定的链接，点下去的一瞬间*/	
+				font-size: 16px;
+				color: green;
+				font-weight: 700;
+
+			}
+
+			/*结构伪类选择器*/
+			li:first-child {
+				color: blue;
+			}
+			li:last-child {
+				color: pink;
+				font-weight: 900;
+			}
+			li:nth-child(4) {                     /*选第四个*/
+				color: red;
+				font-style: italic;
+			}
+
+			/*li:nth-child(even) {                     选第偶数个
+				color: #000000;
+				font-style: italic;
+			}*/
+
+
+			/*li:nth-child(odd) {                     选第奇数个
+				color: #000000;
+				font-style: italic;
+			}*/
+
+			/*li:nth-last-child(odd) {                     倒着数选第奇数个
+				color: #000000;
+				font-style: italic;
+			}*/
+
+
+			/*目标伪类选择器*/
+			/*:target {
+				color: red;
+				font-size: 20px;
+
+			}*/
+
+
+
+
+
+		</style>
+	</head>
+	<body>
+		伪类选择器其中的 链接伪类选择器 主要针对于 a
+		<div>
+		  <a href="#">秒杀 </a>
+		  <a href="#">闪购 </a> 
+		</div>
+		<ul>
+			<li>第一个孩子</li>
+			<li>第二个孩子</li>
+			<li>第三个孩子</li>
+			<li>第四个孩子</li>
+			<li>第五个孩子</li>
+			<li>第六个孩子</li>
+			<li>第七个孩子</li>
+			<li>第八个孩子</li>
+
+		</ul>
+		
+		
+
+	</body>
+</html>

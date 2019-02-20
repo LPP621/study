@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>浮动2</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				/*display: inline-block;
+				margin: -4px;
+				转换为行内块元素 ，就可以放在一行上，但是元素之间会有空隙，加上magin取负数之后就没有缝隙，但是把握不好的话不方便处理，*/
+				float: left;   /* 左侧浮动 */
+			}
+			div:nth-child(2) {
+				background-color: hotpink;
+
+			}
+			div:nth-child(3) {
+				background-color: deeppink;
+				
+			}
+			div:last-child {
+				background-color: purple;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+
+	</body>
+</html>

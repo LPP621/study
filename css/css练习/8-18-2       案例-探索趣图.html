@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>案例-探索趣图</title>
+		<style type="text/css">
+		* {       /*清空浏览器内外边距样式，几乎是写css时必须要写的*/
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			list-style: none;     /*取消列表自带的小点 ，默认的样式*/
+		}
+
+		.sousuo {
+			height: 294px;       /*不包括边框*/
+			width: 238px;
+			border: 1px solid #d9e0ee;			
+			border-top: 3px solid #ff8400;  /*border-top: 一定要写在border的下面，否则不起效果*/
+			margin: 100px;
+		}
+		.sousuo h4 {
+			height: 35px;
+			line-height: 35px;  /*行高等于高度，文字垂直居中*/
+			border-bottom: 1px solid #d9e0ee;
+			font-size: 16px;
+			font-weight: normal;  /*让粗体不变粗*/
+			/*margin-left: 10px;*/  /* 此时底边框会和字一起移动，所以margin不太合适*/
+			padding-left: 12px;      /* 此时盒子宽度不会改变，因为h4继承了父元素的盒子宽度*/
+
+		}
+		.sousuo img {
+			width: 200px;
+			height: 150px;
+			margin: 7px 0 0 8px;
+
+		}
+		.sousuo ul li a {
+			font-size: 12px;
+			color: #666;
+			text-decoration: none;    /* 取消下划线*/
+		}
+		.sousuo ul {
+			margin-left: 8px;
+		}
+		.sousuo ul li {
+			padding-left: 10px;
+			height:34px;
+			line-height: 11px;
+			
+			background-position: center;
+			background: url(../css/images/1.png) -113px -28px no-repeat;   /* 背景设置*/
+
+		}
+		.sousuo ul li a:hover {
+			text-decoration: underline;   /*添加下划线*/
+			color: orange;
+		}
+			
+		</style>
+		
+		
+		
+		
+		
+	</head>
+	<body>
+		<div class="sousuo">
+			<h4>搜索趣图</h4>
+			<img src="../css/images/8.gif" >
+			<ul>
+				<li><a href="">GIF: muamua小黄人muamua小黄人muamua小黄人</a></li>
+				<li><a href="">GIF: muamua小黄人muamua小黄人muamua小黄人</a></li>
+				<li><a href="">GIF: muamua小黄人muamua小黄人muamua小黄人</a></li>
+			</ul>
+			
+
+		</div>
+	</body>
+</html>

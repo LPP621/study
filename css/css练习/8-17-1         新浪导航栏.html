@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>新浪导航栏</title>
+		<style type="text/css">
+			nav {
+				height: 41px;
+				background-color: #fcfcfc;
+				border-top: 3px solid #ff8500;       /*上边框*/
+				border-bottom: 1px solid #edeef0;     /* 下边框*/
+			}
+
+			nav a {
+				font-size: 14px;
+				color: #4c4c4c;
+				text-decoration: none;       /*取消下划线*/
+				padding: 0 15px;     /*上下0    左右15*/
+				height: 41px;
+				line-height: 41px;      /*行高等于高度可以文字垂直居中*/
+				/*因为链接是行内元素没有大小  所以需要转换  行内块*/
+				display: inline-block;
+			}
+
+			nav a:hover {			/*链接伪类选择器  鼠标经过a链接的时候*/
+				background-color: #eee;
+			}
+
+			div {
+				width: 59px;
+				height: 33px;
+				line-height: 33px;	/*文字垂直居中*/
+				border: 1px solid #c1c1c1;
+				margin: 100px 500px;
+				font-size: 16px;
+				color: #666666;
+				border-radius: 5px 0 0 5px;
+				padding-left: 15px;
+				/*盒子的内尺寸是 59+15=74，算上边框的整个内尺寸 59+15+1=75*/
+			}
+		</style>
+	</head>
+	<body>
+		<nav>           <!-- nav标签定义导航链接的部分 -->
+			<a href="#">首页</a>
+			<a href="#">手机新浪网</a>
+			<a href="#">网站导航</a>
+			<a href="#">三个字</a>
+		</nav>     <!-- 什么时候用nav -->
+		<div>新闻</div>
+
+	</body>
+</html>

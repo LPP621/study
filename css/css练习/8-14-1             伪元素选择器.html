@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> 伪元素选择器</title>
+	<style type="text/css">
+		/*.demo    类选择器
+		:first-child      伪类选择器 
+		::first-letter  伪元素选择器*/
+		p::first-letter {         /*选择第一个字*/
+			color: red;
+			font-size: 20px;
+		}
+		p::first-line {         /*选择第一行*/
+			color: blue;
+			font-size: 15px;
+		}
+		p::selection {         /*当鼠标选中文字的时候，文字会变化成设置的样式*/
+			color: green;
+		}
+
+		/*before    和  after 在盒子  div  的内部前面和后面插入文本等*/
+		div::before {           
+			content: "我"
+		}
+		div::after {
+			content: "不开森"
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>freestyle</h1>
+	<p>freestyle，英语词汇，一般指即兴的、随性的随意的发挥，例如HIPHOP说唱中的freestyle就是即兴说唱的意思。2017年6月，因吴亦凡在国产说唱综艺《中国有嘻哈》中屡次提起freestyle而火遍网络
+	综艺节目《中国有嘻哈》首播，在首期节目中，每次镜头切到吴亦凡考核选手时，吴亦凡总会问选手一句话：“你有freestyle吗?”“可以来一段freestyle吗?”</p>
+
+	<div>   今天很     </div>
+
+</body>
+</html>

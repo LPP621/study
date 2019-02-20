@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS优先级第2题</title>
+	<style type="text/css">
+		#father {            /* p 继承 ID 选择器的属性，继承的权重为0*/
+			color: blue;
+		}
+		p {                  /*标签选择器的权重为 0，0，0，1*/
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="father">
+		<p>
+		请问这行字体什么颜色？
+				红色
+		</p>
+
+	</div>
+</body>
+</html>

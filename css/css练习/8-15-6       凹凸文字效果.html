@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>凹凸文字效果</title>
+	<style type="text/css">
+		body {
+			background-color: #ccc;
+
+		}
+		div {
+			color: #ccc;
+			font: 700 60px "微软雅黑";       /*font: font-style    font-variant   font-weight   font-size/line-height   font-family 按顺序*/
+			text-align: center;
+
+		}
+		div:first-child {
+			/*text-shadow: 水平位置      垂直位置   模糊距离   阴影颜色*/               /*模糊距离指的是阴影偏离文本的距离*/
+			text-shadow: 1px 1px 1px #000,      /*下面影子颜色是黑色，影子向下1像素为正值，向右一个像素也为正值*/
+			-1px -1px 1px #fff;                 /*文字是灰色，浮起的效果是白色 fff ，文字向左1像素为负值，向上一像素也为负值*/
+		}
+		div:last-child {
+			/*text-shadow: 水平位置      垂直位置   模糊距离   阴影颜色*/
+			text-shadow: -1px -1px 1px #000,      /*下面影子颜色是黑色，影子向左1像素为负值，向上一个像素也为正值*/
+			1px 1px 1px #fff;                      /*文字是灰色，浮起的效果是白色 fff ，文字向下1像素为正值，向右一像素也为正值*/
+		}
+	</style>
+</head>
+<body>
+	<div>我是凸起的文字</div>
+	<div>我是凹下的文字</div>
+</body>
+</html>

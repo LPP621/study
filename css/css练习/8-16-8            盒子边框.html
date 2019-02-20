@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>盒子边框 border </title>
+		<style type="text/css">
+			
+			input {
+				border: 0;      /*没有边框*/
+			}
+			div {
+				width: 100px;
+				height: 50px;
+				border-width: 1px;
+				border-style: solid;            /*none : 没有边框即忽略所有边框的宽度（默认值）； solid：边框为单实线 ；dashed：边框为虚线 ；dotted：边框为点线；double：边框为双实线 */
+				border-color: pink;
+
+			}
+			.user {
+				border-width: 2px;
+				border-color: skyblue;
+				border-style: solid;
+			}
+			.nc {
+				/*上边框*/
+				border-top-width: 1px;
+				border-top-style: solid;
+				border-top-color: pink;
+				/*下边框*/
+				border-bottom-width: 1px;
+				border-bottom-style: solid;
+				border-bottom-color: skyblue;
+
+			}
+
+			.email {
+				border-top: 1px solid red;        /*上边框 ：宽度 样式 颜色*/
+				border-bottom: 1px solid blue;     /*下边框：宽度 样式 颜色*/
+    			}
+
+    		.tel {
+    			border: 1px solid skyblue;        /*综合性写法，当上下左右边框宽度、样式、颜色都一样时，可简写为这样*/
+    		}
+		</style>
+	</head>
+	<body>
+		<div> 我是一个盒子 </div><br /><br /><br />
+		用户名：<input type="text" class="user"><br /><br />
+		昵 称：<input type="text" class="nc"><br /><br />
+		邮 箱：<input type="email" class="email"><br /><br />
+		手 机：<input type="tel" class="tel"><br /><br />
+	</body>
+</html>

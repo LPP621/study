@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>css背景</title>
+	<style type="text/css">
+		div {
+			width: 300px;
+			height: 300px;
+			background-color: pink;       /*背景颜色*/
+			background-image: url();      /*背景图片*/
+			background-repeat: repeat-x;  /*横向平铺*/
+			background-repeat: repeat-y;  /*纵向平铺*/
+			background-repeat: no-repeat;  /*不平铺*/
+			/*1. 利用方位名词 top bottom 来更改背景图片位置*/
+
+			/*background-position: left top;  默认是左上角*/
+			/*background-position: right bottom; 右下角，方位名词没有顺序，谁在前都可以*/
+			/*background-position: center center; 上下左右都居中 */
+			/*background-position: center;  如果方位名词只写一个，则另外一个默认center*/
+
+
+			/*2. 精确单位 第一个值是x坐标 ，第二个是 y 坐标，y 坐标正值是向下移动，负值向上移动*/
+			/*background-position: 10px 30px; */
+
+
+			/*3.混搭*/
+			/*background-position: 10px center;  水平是10px， 垂直是居中*/
+			/*background-position: center 10px ;  水平是居中， 垂直是10px*/
+
+
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		
+	</div>
+
+</body>
+</html>

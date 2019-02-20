@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>一列固定宽度且居中</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;         /* 清除内外边距，写css时的第一句话*/
+			}
+			/*相同的样式，可以用 并集选择器*/
+			.top, 
+			.banner, 
+			.main, 
+			.footer {
+				width: 960px;
+				margin: 0 auto;          /*让盒子居中对齐，只要保证左右 auto 就可以了，让文字居中对齐时用 text-align: center;*/
+				text-align: center;
+				margin-bottom: 10px;
+				border: 1px dashed #ccc;
+
+			}
+			.top {
+				height: 80px;
+				background-color: pink;				
+			}
+			.banner {
+				height: 150px;
+				background-color: skyblue;				
+			}
+			.main {
+				height: 500px;
+				background-color: hotpink;				
+			}
+			.left {
+				width: 360px;
+				height: 500px;      /*高度不继承父元素*/
+				float: left;
+				background-color: black;
+			}
+			.right {
+				width: 590px;
+				height: 500px;
+				float: right;
+				background-color: purple;
+			}
+			.footer {
+				height: 120px;
+				background-color: blue;				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">top</div>
+		<div class="banner">banner</div>
+		<div class="main">
+			<div class="left">left</div>
+			<div class="right">right</div>
+		</div>
+		<div class="footer">footer</div>
+	</body>
+</html>

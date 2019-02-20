@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>课堂案例</title>
+		<style type="text/css">
+			.site-r a {                   /*将侧导航栏里面的登录链接改为红色，一层一层的找，用后代选择器*/
+				color: red;
+			}
+			.nav ul li a {                /*将主导航栏里面所有的链接改为天蓝色，一层一层的找，用后代选择器*/
+				color: skyblue;
+			}
+			/*将主导航栏和侧导航栏的字体都改为14号和微软雅黑，，，，用并集选择器*/
+			.nav,.sitenav {
+				font-size: 14px;
+				font-family: "microsoft yahei";
+				/*font: 14px "microsoft yahei";*/
+			}
+			/*将主导航里面的一级菜单改为绿色,用子元素选择器*/
+			.nav > ul > li > a {
+				color: green;
+			} 
+		</style>
+	</head>
+	<body>
+		<!-- 主导航栏 -->
+		<div class="nav">
+			<ul>
+				<li><a href="#">公司首页</a></li>
+				<li><a href="#">公司首页</a></li>
+				<li><a href="#">公司产品</a></li>
+				<li>
+					<a href="#">联系我们</a>
+					<ul>
+						<li><a href="#">公司邮箱</a></li>
+						<li><a href="#">公司电话</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 侧导航栏 -->
+		<div class="sitenav">
+			<div class="site-1">左侧导航栏</div>
+			<div class="site-r"><a href="#">登录</a></div>
+		</div>
+
+	</body>
+</html>

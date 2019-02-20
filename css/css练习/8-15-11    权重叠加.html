@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>权重叠加</title>
+		<style type="text/css">
+
+			/*改变位置对最后的显示不影响，只与权重有关*/
+
+			li {       /*权重：0，0，0，1*/
+				color: gray;
+			}
+
+			ul li {      /*权重：ul: 0,0,0,1   li: 0，0，0，1      叠加后为0，0，0，2 */
+				color: green;
+			}
+
+			nav ul li {      /*权重： nav: 0,0,0,1    ul: 0,0,0,1    li: 0,0,0,1      叠加后为0,0,0,3*/
+				color: blue; 
+			}
+
+			/*注意：1⃣️数位之间没有进制，比如说，  0，0，0，5 + 0，0，0，5 = 0，0，0，10 而不是0，0，1，0，所以不会存在10个 div （0，0，0，1）能赶上一个类选择器（0，0，1，0）的情况*/
+			
+			/*     2⃣️ 继承的权重为0*/
+			.daohanglan {
+				color: pink;
+			}
+
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>李白</li>
+				<li>鲁班</li>
+				<li>亚瑟</li>
+			</ul>
+		</nav>
+		<nav class=".daohanglan">
+			<ul>
+				<li>继承的权重为0</li>            <!-- li 继承 ul 继承 .daohanglan 继承 nav 不管继承的父元素的权重多大，继承者本身权重为0-->
+ 			</ul>
+			
+		</nav>
+		<div>
+			<ol>总结优先级
+				<li>使用了 ！important  声明的规则</li>
+				<li>内嵌在 HTML 元素的 style 属性里的声明</li>
+				<li>使用了ID 选择器的规则</li>
+				<li>使用了元素选择器的规则</li>
+				<li>使用了类选择器、属性选择器、伪元素和伪类选择器的规则</li>
+				<li>只包含一个通用选择器的规则</li>
+				<li>同一类选择器则遵循就近原则</li>
+			</ol>
+		</div>
+	</body>
+</html>

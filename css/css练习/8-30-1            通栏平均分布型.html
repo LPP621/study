@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>通栏平均分布型</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;         /* 清除内外边距，写css时的第一句话*/
+			}
+			ul {
+				list-style: none;      /*取消列表的默认样式小圆点*/
+			}
+			.top {
+				height: 200px;
+				background-color: #000;
+			}
+			.banner {
+				width: 960px;
+				height: 400px;
+				background-color: skyblue;
+				margin: 20px auto;          /*上下20左右auto*/
+				border-radius: 15px;
+			}
+			.main {
+				width: 960px;
+				margin: 0 auto;
+				height: 200px;
+			}
+			.main ul li {
+				width: 240px;
+				height: 200px;
+				background-color: pink;
+				float: left;                 /*浮动的目的：让多个块级元素li 一行显示 而且没有缝隙*/
+			}
+			.main ul li:nth-child(even) {      /* even 第偶数个盒子li;   odd 奇数*/
+				background-color: skyblue;
+
+			}
+			.footer {
+				height: 200px;
+				background-color: #000;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				color: white;
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<!-- 通栏：块不限制宽度，和浏览器一样宽 -->
+		<div class="top">top</div>
+		<div class="banner">banner</div>
+		<div class="main">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+		<div class="footer">footer</div>
+
+	</body>
+</html>

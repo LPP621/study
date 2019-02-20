@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS优先级第4题</title>
+		<style type="text/css">
+			div div {            /*权重0002*/
+				color: blue;
+			}
+			div {               /*权重0001*/
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div >
+			<div>
+				<div>
+					请问这行字体什么颜色？  蓝色
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

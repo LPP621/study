@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS优先级第5题</title>
+		<style type="text/css">
+			div div div div div div div div div div div div {           /*标签选择器权重叠加*/
+				color: red;
+			} 
+			.me {                                   /*类选择器权重大于标签选择器*/
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div >
+			<div>
+				<div>
+					<div>
+						<div>
+							<div>
+								<div>
+									<div>
+										<div>
+											<div>
+												<div>
+													<div class="me">
+														请问这行字体什么颜色？ 蓝色
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

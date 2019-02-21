@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10_Promise 实例练习</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 定义获取新闻的功能函数
+    function getNews(url){
+        let promise = new Promise((resolve, reject) => {
+            // 状态：初始化
+            // 执行异步任务
+            // 创建实例对象
+            let xmlHttp = new XMLHttpRequest();
+            // 绑定监听 readyState
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState === 4){
+                    if (xmlHttp.status == 200) {   // 请求成功
+                        console.log(xmlHttp.responseText);
+                        // 修改状态
+                        resolve(xmlHttp.responseText);    // 修改 promise 的状态为成功的状态
+                    } else {     // 请求失败
+                        reject('暂时没有新闻内容');
+                    }
+                }
+            };
+
+            // open 设置请求的方式以及 url
+            xmlHttp.open('GET',url);
+            // 发送
+            xmlHttp.send();
+        });
+        return promise;
+    }
+    getNews('http://localhost:3000/news?id=2')            // () 里面可以放 url,promise中.then 可以链式调用
+        .then((data) => {
+            console.log(data);
+            // 发送请求获取评论内容准备 url
+            let commentsUrl = JSON.parse(data).commentsUrl;
+            let url = 'http;//localhost:3000' + commentsUrl;
+            // 发送请求
+            return getNews(url);
+        },(error) => {
+            console.log(error);
+        })
+        .then((data) => {
+            console.log(data);
+        },() => {
+
+        });
+</script>
+</body>
+</html>

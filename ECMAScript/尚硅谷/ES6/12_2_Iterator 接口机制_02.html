@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12_2_iterator 接口机制_02</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    // 将 iterator 接口部署到指定的数据类型上，可以使用 for of 去循环遍历
+    // 数组，字符串，arguments,set 容器，map 容器
+    let arr = [1,4,65,'abc'];
+    for (let i of arr){
+        console.log(i);      // 1  4  65  abc
+    }
+
+    let str = 'abcdefg';
+    for(let i of str){
+        console.log(i);     // a  b   c  d  e  f  g
+    }
+
+    function fun(){
+        for (let i of arguments){
+            console.log(i);
+        }
+    }
+    fun(1,4,5,'abc');       // 1  4  5  abc
+
+    let obj = {username: 'kobe', age: 39};
+    for (let i of obj){
+        console.log(i);         // Uncaught TypeError: obj is not iterable
+    }
+</script>
+</body>
+</html>

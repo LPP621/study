@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12_3_iterator 接口机制_03</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 等同于在指定的数据内结构上部署了 iterator 接口
+    // 当使用 for of 去遍历某一个数据结构的时候，首先去找Symbol.iterator,找到了就去遍历，没有找到的话就不能遍历 xxx is not...
+    let targetData = {
+        [Symbol.iterator]:function () {
+            let nextIndex = 0;   // 记录指针的位置
+            return {      // 遍历器对象
+                next: function () {
+                    return nextIndex < this.length?{value: this[nextIndex++], done: false}:{value: undefined, done: true};
+                }
+            }
+        }
+    };
+    for (let i of targetData){
+        console.log(i);     // [1,2,3,4,5,6]
+    }
+    // 使用三点运算符，解构赋值，默认去调用 iterator 接口,遍历拿值
+    let arr2 = [1,6];
+    let arr3 = [2,3,4,5];
+    arr2 = [1,...arr3,6];
+    console.log(arr2);    // Array(6)
+    let [a,b] = arr2;
+    console.log(a,b);     // 1  2
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12_1_iterator 接口机制_01</title>
+</head>
+<body>
+<!--
+ 概念：iterator 是一种接口机制，为各种不同的数据结构提供统一的访问机制
+ 作用：
+   1、为各种数据结构，提供一个统一的，简便的访问接口；
+   2、使得数据结构的成员能够按照某种次序排列
+   3、ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供 for...of 消费
+ 工作原理：
+   - 创建一个指针对象（遍历器对象），指向数据结构的起始位置。
+   - 第一次调用 next 方法，指针自动指向数据结构的第一个成员
+   - 接下来不断调用 next 方法，指针会一直往后移动，直到指向最后一个成员
+   - 每调用 next 方法返回的是一个包含 value 和 done 的对象，{value: 当前成员的值，done: 布尔值}
+     * value 表示当前成员的值，done 对应的布尔值表示当前的数据的结构是否遍历结束
+     * 当遍历结束的时候返回的 value 值是undefined,done 值为 false
+  原生具备 iterator 接口的数据（可用 for of 遍历）
+    扩展理解：
+    1、当数据结构上部署了Symbol.iterator 接口，该数据就是可以用 for of 遍历
+    2、当使用 for of 去遍历目标数据的时候，该数据会自动去找 Symbol.iterator 属性
+    // Symbol.iterator 属性指向对象的默认遍历器方法：
+    1、Array
+    2、arguments
+    3、set 容器
+    4、map 容器
+    5、String
+    。。。
+-->
+<script type="text/javascript">
+    // 模拟指针对象（遍历器对象）
+    function myIterator(arr) {  // iterator 接口
+        let nextIndex = 0;   // 记录指针的位置
+        return {      // 遍历器对象
+            next: function () {
+                return nextIndex < arr.length?{value: arr[nextIndex++], done: false}:{value: undefined, done: true};
+            }
+        }
+    }
+    // 准备一个数据
+    let arr = [1,4,65,'abc'];
+    let iteratorObj = myIterator(arr);
+    console.log(iteratorObj.next());           // {value: 1, done: false}
+    console.log(iteratorObj.next());           // {value: 4, done: false}
+    console.log(iteratorObj.next());           // {value: 65, done: false}
+    console.log(iteratorObj.next());           // {value: "abc", done: false}
+    console.log(iteratorObj.next());           // {value: undefined, done: true}
+    console.log(iteratorObj.next());           // {value: undefined, done: true}
+</script>
+</body>
+</html>

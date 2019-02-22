@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13_3_Generator 函数应用_03</title>
+</head>
+<body>
+<script type="text/javascript" src="../../public/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+
+    /*
+    * 需求：
+    * 1、发送 ajax 请求获取新闻内容
+    * 2、新闻内容获取成功后再次发送请求，获取相应的新闻评论内容
+    * 3、新闻内容获取失败则不需要再次发送请求
+    */
+
+    function getNews(url) {
+        $.get(url,function (data) {
+            console.log(data);
+            let url = 'http://localhost:3000' + data.commentsUrl;
+            SX.next(url);
+        })
+    }
+    function* sendXml(){
+        let url = yield getNews('http://localhost:3000/news?id=3');
+        yield getNews(url)
+    }
+    // 获取遍历器对象
+    let SX = sendXml();
+    SX.next();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13_2_Generator 函数_02</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    // 对象的 symbol.iterator 属性，指向遍历器对象
+    let obj = {username: 'kobe',age: 39};
+    obj[Symbol.iterator] = function* myTest() {
+        yield 1;
+        yield 2;
+        yield 3
+    };
+    for (let i of obj){
+        console.log(i);      // 1   2   3
+    }
+</script>
+</body>
+</html>

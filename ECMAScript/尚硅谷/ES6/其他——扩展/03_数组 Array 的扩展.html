@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_数组 Array 的扩展</title>
+</head>
+<body>
+<button>test_1</button>
+<button>test_2</button>
+<button>test_3</button>
+<button>test_4</button>
+<!--
+1、Array.from(v): 将伪数组对象或可遍历对象转换为真数组
+2、Array.of(v1,v2,v3): 将一系列值转换为数组
+3、find(function(value, index, arr){return true}): 找出第一个满足条件返回 true 的元素
+4、findIndex(function(value, index, arr){return true}): 找出第一个满足条件返回 true 的元素下标
+-->
+<script type="text/javascript">
+    let btns = document.getElementsByTagName('button');
+    Array.from(btns).forEach(function (item,index) {     //   只有数组才有 forEach 方法
+        console.log(item);
+    });
+
+    let arr = Array.of(1, 4, 'abc',true);
+    console.log(arr);        // (4) [1, 4, "abc", true]
+
+    let arr2 = [2, 3,4,5,8,6,5,4,2];
+    let result = arr2.find(function (item,index) {     // 找出第一个大于4的元素
+        return item>4;
+    });
+    console.log(result);       // 5
+
+    let arr3 = [2, 3,4,5,8,6,5,4,2];
+    let result3 = arr3.findIndex(function (item,index) {      // 找出第一个大于4的元素下标
+        return item>4;
+    });
+    console.log(result3);      // 3
+
+</script>
+</body>
+</html>

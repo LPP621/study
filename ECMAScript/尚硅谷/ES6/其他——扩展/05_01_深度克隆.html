@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_01_深度克隆_01</title>
+</head>
+<body>
+<script>
+    // 不会影响原数据
+    let str = 'abcd';
+    let str2 = str;
+    console.log('str2='+str2);       // str2 = abcd
+    str2 = '';
+    console.log('str='+str);      // str = abcd
+
+    // 改变了原数据
+    // 拷贝数组/对象，没有生成新的数据而是复制了一份来引用
+    let obj = {username:'kobe', age: 39};
+    let obj1 = obj;
+    console.log(obj1);         // {username: "kobe", age: 39}
+    obj1.username = 'change';
+    console.log('obj.username = ' + obj.username);      // obj.username = change
+
+    let arr1 = [1,4,{username:'kobe', age: 39}];
+    let arr2 = arr1;
+    arr2[0] = 'abcd';
+    console.log(arr1[0]);    // abcd
+    arr2[2] = '0';
+    console.log(arr1[2]);       // 0
+</script>
+</body>
+</html>

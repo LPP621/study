@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34181a07-165c-4e45-afc0-e30a9854a9ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值的扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/13_1_Generator 函数_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/13_2_Generator 函数_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/13_3_Generator 函数应用_03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/14_Async 函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/15_Class定义类.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值 Number 的扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/03_数组 Array 的扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/04_对象 Object 的扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/01_let 关键字.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/01_let 关键字.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/02_const 关键字.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/02_const 关键字.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/03_变量的解构赋值.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/03_变量的解构赋值.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/04_模版字符串.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/04_模版字符串.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/05_简化的对象写法.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/05_简化的对象写法.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/06_箭头函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/06_箭头函数.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/07_点点点运算符.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/07_点点点运算符.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/08_形参的默认值.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/08_形参的默认值.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/09_Promise 对象.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/09_Promise 对象.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/10_Promise 对象案例练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/10_Promise 对象案例练习.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/11_Symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/11_Symbol.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/12_1_Iterator 接口机制_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_1_Iterator 接口机制_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/12_2_Iterator 接口机制_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_2_Iterator 接口机制_02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/12_3_Iterator 接口机制_03.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_3_Iterator 接口机制_03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串扩展.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串 str 扩展.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值的扩展.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,25 +25,26 @@
     <session id="2015725957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="54" />
+          <entry key="html" value="67" />
           <entry key="js" value="1" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="54" />
+          <entry key="HTML" value="67" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -61,12 +52,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="17492" />
+          <entry key="html" value="23591" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="17492" />
+          <entry key="HTML" value="23591" />
         </counts>
       </usages-collector>
     </session>
@@ -74,47 +65,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/14_Async 函数.html">
+        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1448">
-              <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+            <state relative-caret-position="564">
+              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/15_Class定义类.html">
+        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+            <state relative-caret-position="434">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串扩展.html">
+        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="609">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值的扩展.html">
+        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="493">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js练习/js/js104 第一个面向对象的实例.html">
+        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="319">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 69 slice 和 splice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-344" />
           </provider>
         </entry>
       </file>
@@ -167,6 +174,14 @@
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/15_Class定义类.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串扩展.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值的扩展.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/03_数组 Array 的扩展.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/04_对象 Object 的扩展.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html" />
+        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html" />
       </list>
     </option>
   </component>
@@ -177,8 +192,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="24" />
+    <option name="x" value="12" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="970" />
   </component>
@@ -187,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,17 +248,10 @@
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="js 系列课程笔记" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="js 系列课程笔记" type="462c0819:PsiDirectoryNode" />
-              <item name="李立超 js 课程" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,18 +293,19 @@
       <workItem from="1550633101548" duration="12942000" />
       <workItem from="1550712235010" duration="16363000" />
       <workItem from="1550796490853" duration="189000" />
-      <workItem from="1550798490385" duration="11517000" />
+      <workItem from="1550798490385" duration="11595000" />
+      <workItem from="1550898037204" duration="10137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41011000" />
+    <option name="totallyTimeSpent" value="51226000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="24" width="1920" height="970" extended-state="0" />
+    <frame x="12" y="23" width="1920" height="970" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -421,11 +431,6 @@
     <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 73 arguments.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 71 concat、join、reverse、sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1596" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/07_点点点运算符.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -484,13 +489,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/public/js/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/11_Symbol.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -548,38 +547,102 @@
     <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 117 延时调用——setTimeout.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js练习/js/js104 第一个面向对象的实例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/14_Async 函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1448">
-          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        <state relative-caret-position="2030">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/15_Class定义类.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        <state relative-caret-position="1421">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串扩展.html">
+    <entry file="file://$PROJECT_DIR$/js练习/js/js104 第一个面向对象的实例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值 Number 的扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串 str 扩展.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值的扩展.html">
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/03_数组 Array 的扩展.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="454">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/04_对象 Object 的扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 71 concat、join、reverse、sort.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 69 slice 和 splice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>

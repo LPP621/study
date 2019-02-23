@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for of 循环</title>
+</head>
+<body>
+<!--
+for(let value of target){} 循环遍历
+   1、遍历数组
+   2、遍历 Set
+   3、遍历 Map
+   4、遍历字符串
+   5、遍历伪数组
+-->
+<script>
+    let set = new Set([1,2,3,4,5,5,6]);
+    for(let i of set){
+        console.log(i);     // 1 2 3 4 5 6
+    }
+    // 数组去重
+    let arr = [1,2,3,3,3,4,2,5];
+    let arr1 = arr;
+    arr = [];
+    let set1 = new Set(arr1);
+    for(let i of set1){
+        arr.push(i);
+    }
+    console.log(arr);     // (5) [1, 2, 3, 4, 5]
+
+</script>
+</body>
+</html>

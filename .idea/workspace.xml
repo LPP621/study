@@ -2,18 +2,263 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34181a07-165c-4e45-afc0-e30a9854a9ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值 Number 的扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/03_数组 Array 的扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/04_对象 Object 的扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/01_ 全局 function 模式/module1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/01_ 全局 function 模式/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/02_ namespace 模式/module2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/02_ namespace 模式/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/module3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/test3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/module4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/test4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/05_ load script/test5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/教程_笔记/2_CommonJS_Node 模块化教程" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS 模块化/教程_笔记/3_CommonJS-Browserify 模块化教程" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/js/jquery-3.3.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串扩展.html" beforeDir="false" afterPath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/01_字符串 str 扩展.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/02_数值的扩展.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/.idea/css练习.iml" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/.idea/css练习.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/1-19-1 圣杯布局.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/1-19-1 圣杯布局.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/1-19-2  双飞翼布局.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/1-19-2  双飞翼布局.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/19-1-8    h5 页面显示滚动条.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/19-1-8    h5 页面显示滚动条.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/19-1-8-2 纯 css 实现粉色爱心.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/19-1-8-2 纯 css 实现粉色爱心.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/19-1-8-3 css 爱心.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/19-1-8-3 css 爱心.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/19-2-1    三角形、四边形等.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/19-2-1    三角形、四边形等.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/5-25                index.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/5-25                index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/5-25                untitled.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/5-25                untitled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/7-26                lianxi.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/7-26                lianxi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/7-30-1             孝道论文.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/7-30-1             孝道论文.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/7-30-2             css练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/7-30-2             css练习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-1             内联样式表.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-1             内联样式表.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-10           课堂练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-10           课堂练习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-11            属性选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-11            属性选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-2             行内样式表.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-2             行内样式表.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-3             style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-3             style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-3           外部样式表.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-3           外部样式表.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-4             块级显示模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-4             块级显示模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-5             显示模式转换.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-5             显示模式转换.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-5        显示模式转换.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-5        显示模式转换.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-6             交集选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-6             交集选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-7             并集选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-7             并集选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-8             后代选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-8             后代选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-13-9             子元素选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-13-9             子元素选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-14-1             伪元素选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-14-1             伪元素选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-14-2          CSS书写规范.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-14-2          CSS书写规范.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-14-3         CSS背景(background).html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-14-3         CSS背景(background).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-1    魔兽背景图片.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-1    魔兽背景图片.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-10       CSS优先级.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-10       CSS优先级.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-11    权重叠加.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-11    权重叠加.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-2     CSS背景2.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-2     CSS背景2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-3        背景半透明.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-3        背景半透明.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-4      背景缩放.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-4      背景缩放.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-5     多背景图片.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-5     多背景图片.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-6       凹凸文字效果.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-6       凹凸文字效果.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-7         王者荣耀导航栏.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-7         王者荣耀导航栏.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-8         CSS层叠性.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-8         CSS层叠性.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-15-9     CSS继承性.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-15-9     CSS继承性.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-1     CSS优先级第1题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-1     CSS优先级第1题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-10             圆角边框.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-10             圆角边框.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-11      盒子内边距.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-11      盒子内边距.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-2    CSS优先级第2题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-2    CSS优先级第2题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-3    CSS优先级第3题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-3    CSS优先级第3题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-4    CSS优先级第4题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-4    CSS优先级第4题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-5    CSS优先级第5题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-5    CSS优先级第5题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-6    CSS优先级第6题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-6    CSS优先级第6题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-7      盒子模型.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-7      盒子模型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-8            盒子边框.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-8            盒子边框.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-16-9         合并细线表格.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-16-9         合并细线表格.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-17-1         新浪导航栏.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-17-1         新浪导航栏.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-17-2      外边距margin.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-17-2      外边距margin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-17-3           内外边距问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-17-3           内外边距问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-17-4         外边距合并.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-17-4         外边距合并.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-17-5             外边距合并2.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-17-5             外边距合并2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-17-6         盒子的计算尺寸.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-17-6         盒子的计算尺寸.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-18-1       padding不影响盒子大小的情况.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-18-1       padding不影响盒子大小的情况.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-18-2       案例-探索趣图.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-18-2       案例-探索趣图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-20-1     CSS3盒模型.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-20-1     CSS3盒模型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-20-2      盒子阴影.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-20-2      盒子阴影.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-20-3        浮动.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-20-3        浮动.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-20-4        浮动2.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-20-4        浮动2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-21-1        浮动3.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-21-1        浮动3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-25-1        浮动首先要添加标准流父级.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-25-1        浮动首先要添加标准流父级.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-25-2         浮动改变元素模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-25-2         浮动改变元素模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-25-3        版心和布局流程.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-25-3        版心和布局流程.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-25-4                一列固定宽度且居中.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-25-4                一列固定宽度且居中.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-3-1               lianxi2.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-3-1               lianxi2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-3-2              类选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-3-2              类选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-3-3              谷歌案例.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-3-3              谷歌案例.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-3-4              多类名选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-3-4              多类名选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-30-1            通栏平均分布型.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-30-1            通栏平均分布型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-31-1       清除浮动--额外标签法.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-31-1       清除浮动--额外标签法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-31-2      清除浮动--父级添加overflow 方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-31-2      清除浮动--父级添加overflow 方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-31-3     清除浮动--after 伪元素清除浮动.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-31-3     清除浮动--after 伪元素清除浮动.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-1               通配符选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-1               通配符选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-2              单词距离.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-2              单词距离.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-3              颜色半透明与阴影.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-3              颜色半透明与阴影.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-4              伪类选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-4              伪类选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-5              ID选择器.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-5              ID选择器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-6              行高对齐以及缩进.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-6              行高对齐以及缩进.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/8-4-7               综合案例.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/8-4-7               综合案例.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/9-3-1     双伪元素清除浮动.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/9-3-1     双伪元素清除浮动.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css练习/9-3-2     PS.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/css练习/9-3-2     PS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/1111.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/1111.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/4.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/6.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/7.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/7.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/9.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/9.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/p1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/p1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/p2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/p2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/p3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/p3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/p4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/p4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/wow.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/images/wow.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bear.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-aurora-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-aurora-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-aurora-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-aurora-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-aurora-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-aurora-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-aurora-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-aurora-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-aurora-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-aurora-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-space.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-space.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/bg-title.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/bg-title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/mountain1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/mountain1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/mountain2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/mountain2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/images/mountain3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/images/mountain3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/奔跑的北极熊.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/奔跑的北极熊.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/北极熊动画/奔跑的北极熊1.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/北极熊动画/奔跑的北极熊1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/大象动画/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/大象动画/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/大象动画/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/大象动画/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/大象动画/style/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/大象动画/style/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/icon/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/icon/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/icon/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/icon/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/icon/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/icon/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/icon/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/icon/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/icon/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/icon/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/icon/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/icon/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/images/1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/images/1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/images/2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/images/2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/images/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/images/3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/images/4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/images/4.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/images/5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/images/5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/无缝轮播图/轮播.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/无缝轮播图/轮播.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/icon/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/icon/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/icon/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/icon/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/icon/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/icon/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/icon/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/icon/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/icon/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/icon/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/icon/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/icon/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/15mo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/15mo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/15plus.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/15plus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/15tao.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/15tao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/16mo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/16mo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/16p-mo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/16p-mo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/16plus.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/16plus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/16th.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/16th.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/16th.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/16th.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/6T.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/6T.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/6T.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/6T.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/E3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/E3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/Gravity.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/Gravity.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/M15.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/M15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/S6.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/S6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/admin.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/admin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/admin1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/admin1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/b1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/b1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/b2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/b2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/b3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/b3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/b4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/b4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/b5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/b5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/b6.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/b6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bao.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bao1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bao1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bao2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bao2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bao3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bao3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bao4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bao4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bht1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bht1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/bht2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/bht2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/cart1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/cart1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/cdb.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/cdb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/china.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/china.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/cz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/cz.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/e31.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/e31.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/e3mo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/e3mo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/ehy.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/ehy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/ep2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/ep2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/ep51.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/ep51.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/ep52.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/ep52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er5.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er6.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/er7.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/er7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/ewm.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/ewm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/gra.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/gra.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/haibao.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/haibao.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/haibao1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/haibao1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/hd50.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/hd50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/huan.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/huan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/ig10.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/ig10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/lx.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/lx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/m-u.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/m-u.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/meizu15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/meizu15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/mo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/mo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/mo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/mo2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/n6tao.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/n6tao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/n6tao1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/n6tao1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/nck.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/nck.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/note6.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/note6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/orico.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/orico.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/s6mo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/s6mo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/s6tao.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/s6tao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/sd.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/sd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/sf.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/sf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/sm.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/sm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/t-c.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/t-c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/tcz.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/tcz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/th.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/th.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/usb1.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/usb1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/usb2.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/usb2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/usb3.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/usb3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/usb4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/usb4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/usb5.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/usb5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/xb.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/xb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/xiu.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/xiu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/xm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/xm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/images/zt.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/images/zt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/js/jquery-1.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/js/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/js/lij.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/js/lij.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/js/myjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/魅族/1/魅族.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/css index/魅族/1/魅族.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,111 +270,61 @@
     <session id="2015725957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="2_CommonJS_Node 模块化教程" value="5" />
+          <entry key="3_CommonJS-Browserify 模块化教程" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="67" />
-          <entry key="js" value="1" />
+          <entry key="html" value="91" />
+          <entry key="js" value="27" />
+          <entry key="json" value="3" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="67" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="HTML" value="91" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="27" />
+          <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="23591" />
+          <entry key="2_CommonJS_Node 模块化教程" value="418" />
+          <entry key="3_CommonJS-Browserify 模块化教程" value="186" />
+          <entry key="html" value="24306" />
+          <entry key="js" value="1007" />
+          <entry key="json" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="23591" />
+          <entry key="HTML" value="24306" />
+          <entry key="JSON" value="105" />
+          <entry key="JavaScript" value="1007" />
+          <entry key="Markdown" value="604" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 69 slice 和 splice.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-344" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -137,6 +332,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>showName</find>
+      <find>立即</find>
+      <find>defineP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,15 +342,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ECMA.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/01_严格模式.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/02_JSON 对象.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/03_1_object 扩展.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/03_2_object扩展.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/04_数组的扩展.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/05_function 函数扩展.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/01_let 关键字.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/02_const 关键字.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/03_变量的解构赋值.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/04_模版字符串.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/05_简化的对象写法.html" />
@@ -182,6 +370,29 @@
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/01_ 全局 function 模式/module1.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/01_ 全局 function 模式/test1.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/02_ namespace 模式/module2.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/02_ namespace 模式/test2.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/module3.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/test3.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/test4.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/module4.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/01_ modular/05_ load script/test5.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/module1.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/教程_笔记/2_CommonJS_Node 模块化教程" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/package.json" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module1.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module2.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module3.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/app.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/index.html" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/app.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/教程_笔记/3_CommonJS-Browserify 模块化教程" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/package.json" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module1.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module2.js" />
+        <option value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module3.js" />
       </list>
     </option>
   </component>
@@ -191,7 +402,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/package.json" />
+      <path value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="12" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
@@ -202,7 +419,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,48 +426,11 @@
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="ECMAScript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="ECMAScript" type="462c0819:PsiDirectoryNode" />
-              <item name="尚硅谷" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="ECMAScript" type="462c0819:PsiDirectoryNode" />
-              <item name="尚硅谷" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="ECMAScript" type="462c0819:PsiDirectoryNode" />
-              <item name="尚硅谷" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="其他——扩展" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="ECMAScript" type="462c0819:PsiDirectoryNode" />
-              <item name="尚硅谷" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="js 系列课程笔记" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,10 +439,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JS 模块化/教程_笔记" />
+      <recent name="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js" />
+      <recent name="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src" />
+      <recent name="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules" />
+      <recent name="$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css/css index" />
+      <recent name="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules" />
+      <recent name="$PROJECT_DIR$/JS 模块化" />
       <recent name="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用" />
       <recent name="$PROJECT_DIR$/ECMAScript/尚硅谷/public" />
     </key>
@@ -280,6 +470,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -294,23 +494,23 @@
       <workItem from="1550712235010" duration="16363000" />
       <workItem from="1550796490853" duration="189000" />
       <workItem from="1550798490385" duration="11595000" />
-      <workItem from="1550898037204" duration="10137000" />
+      <workItem from="1550898037204" duration="10208000" />
+      <workItem from="1551316852066" duration="9170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51226000" />
+    <option name="totallyTimeSpent" value="60467000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="23" width="1920" height="970" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="970" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2630458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32915717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32915717" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,7 +518,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32915717" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -333,210 +533,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ECMA.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/01_严格模式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/02_JSON 对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/03_1_object 扩展.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/03_2_object扩展.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 72 call 和 apply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/01_let 关键字.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/03_变量的解构赋值.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/05_简化的对象写法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/05_function 函数扩展.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/04_Array 数组的扩展.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/04_模版字符串.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 73 arguments.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/07_点点点运算符.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/08_形参的默认值.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 121 定时器的应用——上下左右移动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 118 定时器的应用一.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/02_const 关键字.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/10_Promise 对象案例练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_1_Iterator 接口机制_01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_2_Iterator 接口机制_02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_3_Iterator 接口机制_03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/public/js/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/11_Symbol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js练习/js/js99 Ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js练习/js/js100 表单提交.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js练习/js/js101 ajax.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/13_2_Generator 函数_02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/13_1_Generator 函数_01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/06_箭头函数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/09_Promise 对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/13_3_Generator 函数应用_03.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -551,13 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2030">
           <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/15_Class定义类.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -601,48 +590,304 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_01_深度克隆.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="667">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_02_深度克隆.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="667">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 69 slice 和 splice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/05_03_深度克隆.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1131">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/07_for of 循环.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/其他——扩展/06_set, map 容器.html">
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 69 slice 和 splice.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/01_ 全局 function 模式/module1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="232">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES7/ES7.html">
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/01_ 全局 function 模式/test1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="319">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/02_ namespace 模式/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/02_ namespace 模式/module2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/10_Promise 对象案例练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_2_Iterator 接口机制_02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_3_Iterator 接口机制_03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/01_let 关键字.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/02_const 关键字.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/15_Class定义类.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/12_1_Iterator 接口机制_01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/07_点点点运算符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/08_形参的默认值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/09_Promise 对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/03_变量的解构赋值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/03_1_object 扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-793">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/module3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/test3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/05_ load script/test5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/test4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/module4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/教程_笔记/2_CommonJS_Node 模块化教程">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="348">
+            <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/module3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules/module1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS 模块化/教程_笔记/3_CommonJS-Browserify 模块化教程">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="672">
+            <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

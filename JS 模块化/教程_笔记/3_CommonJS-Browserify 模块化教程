@@ -1,0 +1,31 @@
+## Browserify 模块化教程
+
+1、创建项目结构  
+     ```  
+     
+      |- js  
+         |-dist  
+         |-src  
+            |- module1.js  
+            |- module2.js  
+            |- module3.js  
+            |-app.js  
+      |-index.html
+      |-package.json  
+      {  
+          "name": "browserify-test",
+          "version": "1.0.0"  
+      }
+     ```  
+3、下载 browserify  
+    * 全局： npm install browserify -g (运行时)  
+    * 局部： npm install browserify --save-dev （开发时）
+4、定义模块代码  
+    *  module1.js  
+    ```
+    module.eaports = {
+       foo() {
+          console.log('module1 foo()')
+       }
+    }  
+    ```      

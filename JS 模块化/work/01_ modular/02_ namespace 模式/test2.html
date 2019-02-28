@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>namespace 模式</title>
+</head>
+<body>
+<script src="module2.js"></script>
+<script>
+    obj.foo();    // foo() module2
+    console.log(obj.msg);  // module2
+    obj.msg = 'change';
+    obj.foo();      // foo()   change
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局 function 模式</title>
+</head>
+<body>
+<script src="module1.js"></script>
+<script>
+    foo();
+    bar();
+    // 如果重新定义 msg ，会造成命名冲突，虽然不会报错，但是会污染环境
+    msg = 'change';
+    foo();
+</script>
+</body>
+</html>

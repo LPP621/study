@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立即执行函数 IFEE 模式</title>
+</head>
+<body>
+<script src="module3.js"></script>
+<script>
+    msg = 'change';
+    console.log(msg);     // change ，虽然打印出来了，但是是给 window 定义的 msg ,而不是修改的 module3 里面的 msg
+    module3.foo();         // foo()  modules
+</script>
+</body>
+</html>

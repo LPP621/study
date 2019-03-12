@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>感谢您的惠顾</title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/style/evaluation.css">
+    <style type="text/css">
+		.gray {filter: grayscale(100%);}
+    </style>
+</head>
+<body>
+    <div class="score">综合评分</div>
+    <div class='stars' id="stars">
+        <img class="star" src="__STATIC__/images/star_k.png">
+        <img class="star" src="__STATIC__/images/star_k.png">
+        <img class="star" src="__STATIC__/images/star_k.png">
+        <img class="star" src="__STATIC__/images/star_k.png">
+        <img class="star" src="__STATIC__/images/star_k.png">
+    </div>
+    <div class="content">
+        <textarea name="evaluation_content" id="evaluation_content" maxlength="300" placeholder="请写下您对我们的评价吧！评价得优惠券哦！"></textarea>
+    </div>
+    <div class="goods">
+    	<div class="series">三角烧系列</div>
+    	{volist name="product_list.food_list" id="food"}
+    	<div class="goods_name">
+    		<input type="hidden" name="product-{$food.product_id}"  value='0'>
+    		<span>{$food.product_name}</span>
+    		<div class="support">
+    			<img onclick="getImg('yes','product-{$food.product_id}')" class="gray" src="__STATIC__/images/support.png">
+    			<img onclick="getImg('no','product-{$food.product_id}')" class="gray" src="__STATIC__/images/nonsupport.png">
+    		</div>
+    	</div>
+    	{/volist}
+    </div>
+    <div class="goods">
+    	<div class="series">茶饮系列</div>
+		{volist name="product_list.drink_list" id="drink"}
+    	<div class="goods_name">
+    		<input type="hidden" name="product-{$drink.product_id}" value='0'>
+    		<span>{$drink.product_name}</span>
+    		<div class="support">
+    			<img onclick="getImg('yes','product-{$drink.product_id}')" class="gray"  src="__STATIC__/images/support.png">
+    			<img onclick="getImg('no','product-{$drink.product_id}')" class="gray no" src="__STATIC__/images/nonsupport.png">
+    		</div>
+    	</div>
+		{/volist}
+    </div>
+    <button class="submit">提交</button>
+</body>
+<script type="text/javascript" src="__STATIC__/js/jquery-2.1.4.js"></script>
+<script type="text/javascript">
+	function getImg(status,inputName){
+		var value=$("input[name='"+inputName+"']").val();
+		if (status == 'yes') {
+			if (value == 2) {
+				$("input[name='"+inputName+"']").val(0);
+			}else{
+				$("input[name='"+inputName+"']").val(2);
+			}
+		}
+		if (status == 'no') {
+			if (value == 1) {
+				$("input[name='"+inputName+"']").val(0);
+			}else{
+				$("input[name='"+inputName+"']").val(1);
+			}
+		}
+	}
+	$(document).ready(function(){
+
+		// 自适应屏幕
+		$('html').css('font-size', ($(window).width()/360)*16);
+
+		// 点亮星星
+		var index;
+		$('.star').click(function(){
+			index=$(this).index();
+			for (var i =0 ; i < 5; i++){
+				if(i<=index){
+					$('.star')[i].setAttribute("src","__STATIC__/images/star.png");
+				}else{
+					$('.star')[i].setAttribute("src","__STATIC__/images/star_k.png");
+				}
+			}
+		});
+
+		// 点赞
+		$(".support img").click(function(){
+			$(this).toggleClass("gray");
+			if (!$(this).hasClass('gray')) {
+				$(this).siblings('img').addClass('gray');
+			}
+		});
+
+		// 提交
+		$('.submit').click(function() {
+			var score = index + 1;
+			// console.log('星分：', score);
+			if (!score) {
+				alert('请评分');
+				return false
+			}
+
+			var evaluation_content  = document.getElementById('evaluation_content').value;
+			if(evaluation_content.length==0){
+				alert('请填写评价');
+                $('#evaluation_content').focus();
+             	return false;
+			}
+
+            getSendProductList();
+
+			$.ajax({
+				type: 'POST',
+				url: "{:url('sendEvaluation')}",
+				dataType : "json",
+				data: {
+					'user_id': '<?php echo ($user_id); ?>',
+					'out_trade_no': '<?php echo ($out_trade_no); ?>',
+					'start_number': score,
+					'product_list': newlist,
+					'evaluation_content': evaluation_content
+				},
+				success : function(res) {
+					if (res.return_code === 0) {
+						window.location.href="{:url('success')}";
+					} else {
+						alert(res.return_msg)
+					}
+				},
+	            error:function(data,err){
+	            	console.log(data)
+                }
+			})
+			// console.log({
+			// 		'user_id': '<?php echo ($user_id); ?>',
+			// 		'out_trade_no': '<?php echo ($out_trade_no); ?>',
+			// 		'start_number': score,
+			// 		'product_list': newlist,
+			// 		'evaluation_content': evaluation_content
+			// })
+		});
+        var newlist=[];
+        var product_list='<?php echo json_encode($product_list); ?>';
+        // console.log(JSON.parse(product_list))
+		function getSendProductList(){
+			var list=JSON.parse(product_list);
+			for (var i = list.food_list.length - 1; i >= 0; i--) {
+				pushNewList(list.food_list[i]);
+			}
+			for (var i = list.drink_list.length - 1; i >= 0; i--) {
+				pushNewList(list.drink_list[i]);
+			}
+		}
+		// push 为一个新的商品列表
+		function pushNewList(product){
+			// 获取商品信息
+			var product_id=product.product_id;
+			var value=$("input[name='product-"+product_id+"']").val();
+			var object={'product_id':product_id,'like_status':value};
+			if (value !== "0") {
+				newlist.push(object);
+			}
+			// console.log(value)
+		}
+	})
+
+</script>
+</html>

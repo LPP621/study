@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    background-color: #f8f8f8;
+}
+.score {
+    font-family: "PingFang_SC_bold";
+    font-size: 1.3rem;
+    color: rgb(51,51,51);
+    margin-top: 1.8rem;
+    margin-left: 1.1rem;
+}
+.star {
+    margin-top: 1.8rem;
+ 	text-align: center;
+ 	margin-left: -1rem;
+}
+.star img {
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding-left: 1rem;
+}
+.content {
+	text-align: center;
+}
+.content textarea {
+	width: 80%;
+	height: 110px;
+	background-color: #f8f8f8;
+	border: 1px solid #e6e6e6;
+	border-radius: 0.2rem;
+	margin-top: 2rem;
+	padding-left: 0.9rem;
+	padding-top: 0.9rem;
+	font-family: "PingFang_SC_Regular";
+	font-weight: 200;
+	font-size: 0.85rem;
+	color: #adadad;
+}
+.goods {
+	margin-top: 2.5rem;
+	margin-left: 1.1rem;
+}
+.series {
+	color: #666666;
+	font-family: "PingFang_SC_Regular";
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+.goods .goods_name {
+	overflow: hidden;
+	padding-left: 1.7rem;
+	padding-top: 1.5rem;
+}
+.goods .goods_name span {
+	font-family: "PingFang_SC_Regular";
+	font-size: 1rem;
+	color: #adadad;
+	font-weight: 200;
+}
+.goods .goods_name .support {
+	float: right;
+	margin-right: 3.7rem;
+}
+.goods .goods_name .support img {
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding-left: 1.9rem;
+}
+button {
+	width: 80%;
+	margin-top: 2.4rem;
+	background-color: rgb(241,154,118);
+	border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.9rem;
+	padding-right: 0.9rem;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.55555556;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.submit {
+	margin-bottom: 0.2rem;
+}

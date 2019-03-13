@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34181a07-165c-4e45-afc0-e30a9854a9ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/case/evaluation/controller/EvaluationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/complete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/nonsupport.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/nonsupport_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/star_k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/support_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/不点赞.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/不点赞选中.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/关闭.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/点赞不选中.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/images/点赞选中.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/style/evaluation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/view/evaluation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/view/evaluation/submitted.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/evaluation/view/evaluation/successful_submission.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/css index/css练习/给单选按钮自定义样式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/css index/images/support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/css index/images/support_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js练习/js/点星星评分.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式_copy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 32 嵌套的 for 循环.html" beforeDir="false" afterPath="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 32 嵌套的 for 循环.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,15 +17,15 @@
     <session id="2015725957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,7 +34,7 @@
           <entry key="3_CommonJS-Browserify 模块化教程" value="1" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="119" />
+          <entry key="html" value="131" />
           <entry key="jpeg" value="1" />
           <entry key="js" value="29" />
           <entry key="json" value="3" />
@@ -65,7 +46,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="119" />
+          <entry key="HTML" value="131" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="29" />
@@ -78,14 +59,14 @@
         <counts>
           <entry key="2_CommonJS_Node 模块化教程" value="418" />
           <entry key="3_CommonJS-Browserify 模块化教程" value="186" />
-          <entry key="html" value="24370" />
+          <entry key="html" value="24578" />
           <entry key="js" value="1007" />
           <entry key="json" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="24370" />
+          <entry key="HTML" value="24578" />
           <entry key="JSON" value="105" />
           <entry key="JavaScript" value="1007" />
           <entry key="Markdown" value="604" />
@@ -96,72 +77,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 125 完成轮播图.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 127 二级菜单——展开、收起.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1797" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/css index/css练习/给单选按钮自定义样式.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/evaluation/view/evaluation/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/evaluation/style/evaluation.css">
+        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 117 延时调用——setTimeout.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/case/evaluation/controller/EvaluationController.php">
+        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-              <folding>
-                <element signature="e#125#146#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="570">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 37 质数练习的改进.html">
+        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式_copy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/css index/css练习/8-4-3              颜色半透明与阴影.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 32 嵌套的 for 循环.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1291" />
+            <state relative-caret-position="1363">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 66 数组的遍历.html">
+        <entry file="file://$PROJECT_DIR$/css/css index/css练习/8-15-3        背景半透明.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 49 枚举对象中的属性——for...in .html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/css/css index/css练习/8-17-2      外边距margin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1162" />
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -182,6 +143,7 @@
       <find>toggleClass</find>
       <find>getE</find>
       <find>getEle</find>
+      <find>jquery</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/07_点点点运算符.html" />
-        <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/08_形参的默认值.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/10_Promise 对象案例联系.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/11_Symbol.html" />
         <option value="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/12_Iterator 接口机制.html" />
@@ -241,6 +201,8 @@
         <option value="$PROJECT_DIR$/js练习/js/js39  getByClass.html" />
         <option value="$PROJECT_DIR$/css/css index/css练习/给单选按钮自定义样式.html" />
         <option value="$PROJECT_DIR$/case/evaluation/controller/EvaluationController.php" />
+        <option value="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 32 嵌套的 for 循环.html" />
+        <option value="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式.html" />
       </list>
     </option>
   </component>
@@ -256,9 +218,8 @@
       <path value="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="144" />
-    <option name="y" value="64" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="970" />
   </component>
@@ -277,20 +238,38 @@
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="css index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="css index" type="462c0819:PsiDirectoryNode" />
+              <item name="css练习" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="js 系列课程笔记" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="js 系列课程笔记" type="462c0819:PsiDirectoryNode" />
+              <item name="李立超 js 课程" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="js 系列课程笔记" type="462c0819:PsiDirectoryNode" />
+              <item name="李立超 js 课程" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -309,19 +288,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index" />
+      <recent name="$PROJECT_DIR$/case/evaluation" />
+      <recent name="$PROJECT_DIR$/case" />
+      <recent name="$PROJECT_DIR$/css/css index/images" />
+      <recent name="$PROJECT_DIR$/JS 模块化/教程_笔记" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/css/css index" />
       <recent name="$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/modules" />
       <recent name="$PROJECT_DIR$/JS 模块化" />
       <recent name="$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用" />
       <recent name="$PROJECT_DIR$/ECMAScript/尚硅谷/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/case/evaluation" />
-      <recent name="$PROJECT_DIR$/case" />
-      <recent name="$PROJECT_DIR$/css/css index/images" />
-      <recent name="$PROJECT_DIR$/JS 模块化/教程_笔记" />
-      <recent name="$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,18 +342,19 @@
       <workItem from="1550898037204" duration="10208000" />
       <workItem from="1551316852066" duration="9300000" />
       <workItem from="1552293850427" duration="2300000" />
-      <workItem from="1552356867870" duration="4380000" />
+      <workItem from="1552356867870" duration="4466000" />
+      <workItem from="1552448211653" duration="3648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67277000" />
+    <option name="totallyTimeSpent" value="71011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="64" width="1920" height="970" extended-state="0" />
+    <frame x="35" y="23" width="1920" height="970" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2683706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27103302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -402,75 +382,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES6/常用/03_变量的解构赋值.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECMAScript/尚硅谷/ES5/03_1_object 扩展.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-793">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/module3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/03_ IIFE 模式/test3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/05_ load script/test5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/test4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/01_ modular/04_ IFEE 模式增强/module4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/教程_笔记/2_CommonJS_Node 模块化教程">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="348">
-            <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/src/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS 模块化/work/02_ CommonJS-Node/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS 模块化/work/03_CommonJS-Browserify/js/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -590,11 +501,6 @@
         <state relative-caret-position="-122" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js练习/js/js8-1 Jquery——className.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js练习/js/js12 while 循环.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -631,42 +537,26 @@
     <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 70 数组去重练习.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 66 数组的遍历.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 49 枚举对象中的属性——for...in .html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 37 质数练习的改进.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 32 嵌套的 for 循环.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1291" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 125 完成轮播图.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 127 二级菜单——展开、收起.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1797" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/css index/images/1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/css index/images/2.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 125 完成轮播图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2291">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 127 二级菜单——展开、收起.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/css index/css练习/给单选按钮自定义样式.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -676,6 +566,15 @@
     <entry file="file://$PROJECT_DIR$/case/evaluation/style/evaluation.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 37 质数练习的改进.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 66 数组的遍历.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 49 枚举对象中的属性——for...in .html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/case/evaluation/controller/EvaluationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
@@ -683,6 +582,66 @@
           <folding>
             <element signature="e#125#146#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js练习/js/js8-1 Jquery——className.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css index/css练习/8-4-3              颜色半透明与阴影.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css index/css练习/8-15-3        背景半透明.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css index/css练习/8-17-2      外边距margin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式_copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 118 定时器的应用一.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-852" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 120 定时器的应用三.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 117 延时调用——setTimeout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 114 setInterval().html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-685" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 32 嵌套的 for 循环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/index 31 质数练习.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js 系列课程笔记/李立超 js 课程/index/自定义弹框样式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>

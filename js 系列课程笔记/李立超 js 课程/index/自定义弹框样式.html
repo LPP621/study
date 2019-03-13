@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .prompt {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            height: 10%;
+            width: 50%;
+            padding-top: 9%;
+            text-align: center;
+            color: rgb(52,13,10);
+            background: rgba(241, 154, 118, 0.4);
+            border-radius: 1.8rem;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+<button onclick="myalert('请点亮星星哦^_^')" >按钮</button>
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // 公共提示框
+    function myalert(str) {
+        var div = '<div class="prompt"></div>';
+        $('body').append(div);
+        $('.prompt').html(str);
+        $('.prompt').show();
+        setTimeout(function() {
+            $('.prompt').hide();
+            $('.prompt').remove();
+        }, 3000)
+    }
+</script>
+</html>

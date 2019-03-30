@@ -32,24 +32,24 @@ let
 
     // 方式一：使用闭包形式立即执行函数，
     // 使用闭包形式弹出索引 i（立即执行函数） ,function 后的 i 是实参，后面括号里面的是形参
-    /*
+
     for (var i=0;i<btns.length;i++){
         var btn = btns[i];
-        (function (i) {
+        (function (i) {                      // 不加立即执行函数的话点击每一个按钮都会弹出 3
             btn.onclick = function () {
                 alert(i);
             }
         })(i)
     }
-    */
+
 
     // 方式二：let
-    for (let i=0;i<btns.length;i++){
-        var btn = btns[i];
-        btn.onclick = function () {
-            alert(i);       // 0，1，2
-        }
-    }
+    // for (let i=0;i<btns.length;i++){
+    //     var btn = btns[i];
+    //     btn.onclick = function () {
+    //         alert(i);       // 0，1，2
+    //     }
+    // }
 </script>
 </body>
 </html>
